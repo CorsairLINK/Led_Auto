@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('../Test/fonts/Car-Light-Icons/style.css');
+
+
+:root {
+    /* Color */
+    --bg: #24272C;
+    --label: #7F8493;
+    --gradient: liner-gradient(to bottom, #2FB8FF, #9EECD9)
+}
+
+body {
+    background-color: var(--bg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--label);
+    font-family: 'Inter', sans-serif;
+}
+/*Тени для панели*/
+.shadow-panel {
+    box-shadow: 
+        -4px -4px 15px rgba(255, 255, 255, 0.07), 
+        6px 6px 6px rgba(0, 0, 0, 0.30);
+}
+.shadow-panel_pressed {
+    box-shadow: 
+        -4px -4px 15px rgba(255, 255, 255, 0.07), 
+        6px 6px 6px rgba(0, 0, 0, 0.30), 
+        inset -4px -4px 15px rgba(255, 255, 255, 0.07), 
+        inset 6px 6px 6px rgba(0, 0, 0, 0.30);
+} 
+/*Тени для кнопок*/
+.shadow {
+    box-shadow: 
+        -4px -4px 15px rgba(255, 255, 255, 0.07), 
+        6px 6px 6px rgba(0, 0, 0, 0.30);
+}
+.shadow:hover,
+.shadow_pressed {
+    box-shadow: 
+        inset -4px -4px 15px rgba(255, 255, 255, 0.07), 
+        inset 6px 6px 6px rgba(0, 0, 0, 0.30);
+} 
+.button_ball {
+    
+}
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
