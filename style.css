@@ -23,8 +23,8 @@ body {
 /* Тени для панели */
 .shadow-panel {
     box-shadow: 
-        -4px -4px 15px rgba(255, 255, 255, 0.07), 
-        6px 6px 6px rgba(0, 0, 0, 0.30);
+        -8px -8px 15px rgba(255, 255, 255, 0.07), 
+        10px 10px 6px rgba(0, 0, 0, 0.30);
 }
 .shadow-panel_pressed {
     box-shadow: 
@@ -63,26 +63,26 @@ body {
     border-radius: 100%;
     background: linear-gradient(
         to right bottom,
-        rgba(255,255,255,0.12) 5%, 
+        rgba(255,255,255,0.14) 20%, 
         rgba(0,0,0,0.50));
 }
 .button_ball::after {
-    --size: -2px;
+    --size: -6px;
     z-index: -1;
     background: linear-gradient(
         to left top,
-        rgba(255,255,255,0.14), 
+        rgba(255,255,255,0.20), 
         rgba(0,0,0,0.85));
 }
 /* Круглая кнопка с иконкой */
 .button_round {
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 120px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: 70px;
 }
 
 /* layout */
