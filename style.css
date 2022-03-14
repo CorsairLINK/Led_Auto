@@ -1,6 +1,6 @@
+/* Подключение шрифта текста и иконочного шрифта */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 @import url('fonts/Car-Light-Icons/style.css');
-
 
 :root {
     /* Color */
@@ -8,22 +8,19 @@
     --label: #7F8493;
     --gradient: liner-gradient(to bottom, #2FB8FF, #9EECD9)
 }
-
+/*Настройки для ТЕЛА (body)*/
 body {
     background-color: var(--bg);
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
+/* Общий правила для всей страницы */
 * {
     margin: 0;
     padding: 0;
     color: var(--label);
     font-family: 'Inter', sans-serif;
 }
-/*Тени для панели*/
+/* Тени для панели */
 .shadow-panel {
     box-shadow: 
         -4px -4px 15px rgba(255, 255, 255, 0.07), 
@@ -36,7 +33,7 @@ body {
         inset -4px -4px 15px rgba(255, 255, 255, 0.07), 
         inset 6px 6px 6px rgba(0, 0, 0, 0.30);
 } 
-/*Тени для кнопок*/
+/* Тени для кнопок */
 .shadow {
     box-shadow: 
         -4px -4px 15px rgba(255, 255, 255, 0.07), 
@@ -48,10 +45,37 @@ body {
         inset -4px -4px 15px rgba(255, 255, 255, 0.07), 
         inset 6px 6px 6px rgba(0, 0, 0, 0.30);
 } 
+/* Стиль выпуклой кнопки */
 .button_ball {
-    
+    position: relative;
+    background-color: var(--bg);
 }
-.button {
+.button_ball::before,
+.button_ball::after {
+    --size: 0;
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: var(--size);
+    right: var(--size);
+    bottom: var(--size);
+    left: var(--size);
+    border-radius: 100%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0.12) 5%, 
+        rgba(0,0,0,0.50));
+}
+.button_ball::after {
+    --size: -2px;
+    z-index: -1;
+    background: linear-gradient(
+        to left top,
+        rgba(255,255,255,0.14), 
+        rgba(0,0,0,0.85));
+}
+/* Круглая кнопка с иконкой */
+.button_round {
     width: 50px;
     height: 50px;
     border-radius: 50px;
@@ -59,4 +83,25 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 22px;
+}
+
+/* layout */
+.wrapper {
+    position: relative;
+    z-index: -2;
+    padding: 20px 30px;
+    width: 640px;
+    height: 1136px;
+    background: linear-gradient(to bottom, #2A2D32, #131313);
+
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.title {
+    font-size: 28px;
+}
+.info {
+
 }
