@@ -2,7 +2,7 @@
 let connectButton = document.getElementById('connect');
 let disconnectButton = document.getElementById('disconnect');
 let terminalContainer = document.getElementById('terminal');
-let temp = document.getElementById('temp');
+//let temp = document.getElementById('temp');
 let sendForm = document.getElementById('send-form');
 let inputField = document.getElementById('input');
 // Подключение к устройству при нажатии на кнопку Connect
@@ -106,13 +106,13 @@ function startNotifications(characteristic) {
 // Получение данных
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
-  temp(value);
-  log(value); //Значение приходящее от Arduino 
+  //temp(value);
+  //log(value); //Значение приходящее от Arduino 
   for (let c of value) {
     if (c === '\n') {
       let data = readBuffer.trim();
       readBuffer = '';
-      log(data); //Значение приходящее от Arduino 
+      //log(data); //Значение приходящее от Arduino 
       if (data) {
         receive(data);
       }
@@ -134,9 +134,9 @@ function log(data, type = '') {
       '<div' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>');
 }
 
-function get_temp(data) {
+/*function get_temp(data) {
   temp.createTextNode(data)
-}
+}*/
 
 // Отключиться от подключенного устройства
 function disconnect() {
