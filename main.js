@@ -106,7 +106,7 @@ function startNotifications(characteristic) {
 // Получение данных
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
-  temp(value);
+  get_temp(value);
   for (let c of value) {
     if (c === '\n') {
       let data = readBuffer.trim();
@@ -133,7 +133,7 @@ function log(data, type = '') {
 }
 
 function get_temp(data) {
-  temp.getElementById('temp').innerHTML = data;
+  temp.innerHTML = data;
 }
 //temp.createTextNode(data);
 // Отключиться от подключенного устройства
