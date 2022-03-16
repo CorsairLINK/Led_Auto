@@ -112,6 +112,7 @@ function handleCharacteristicValueChanged(event) {
       readBuffer = '';
       if (data) {
         receive(data);
+        get_temp(data);
       }
     }
     else {
