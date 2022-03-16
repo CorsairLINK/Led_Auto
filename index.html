@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- Подключение стилей -->
-    <title>CarLight Mobile App</title> <!-- Название вкладки -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <!--
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div>
-                <h1 class="title">CarLight</h1>
-                <div class="info">
-                    <i class="car_user">100</i>
-                </div>
-            </div>
-            <!-- Кнопка подключения -->
-            <div class="shadow-panel button_round button_ball">
-                <i class="car_gear"></i>
-            </div>
-        </header>
-    </div>
-    
+
+<button id="connect" type="button">Подключиться</button>
+
+<button id="disconnect" type="button">Отключиться</button>
+
+<div id="terminal" class="terminal"></div>
+
+<form id="send-form">
+    <input id="input" type="text">
+    <button type="submit">Отправить</button>
+</form>
+<script src="main.js"></script>
 </body>
 </html>
