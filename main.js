@@ -133,10 +133,9 @@ function log(data, type = '') {
 }
 
 function get_temp(data) {
-  temp.createTextNode(data);
   temp.getElementById('temp').innerHTML = data;
 }
-
+//temp.createTextNode(data);
 // Отключиться от подключенного устройства
 function disconnect() {
   if (deviceCache) {
