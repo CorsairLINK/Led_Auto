@@ -133,7 +133,7 @@ function log(data, type = '') {
 }
 
 function get_temp(data) {
-  temp.innerHTML = data;
+  temp.innerHTML = String(data);
 }
 //temp.createTextNode(data);
 // Отключиться от подключенного устройства
