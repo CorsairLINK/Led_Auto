@@ -106,13 +106,10 @@ function startNotifications(characteristic) {
 // Получение данных
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
-  //temp(value);
-  //log(value); //Значение приходящее от Arduino 
   for (let c of value) {
     if (c === '\n') {
       let data = readBuffer.trim();
       readBuffer = '';
-      //log(data); //Значение приходящее от Arduino 
       if (data) {
         receive(data);
       }
