@@ -46,9 +46,7 @@ function connect() {
 }
 // Запрос выбора Bluetooth устройства
 function requestBluetoothDevice() {
-  //Вывод в терминал
   log('Requesting bluetooth device...'); 
-
   return navigator.bluetooth.requestDevice({
     filters: [{services: [0xFFE0]}],
   }).
@@ -57,7 +55,6 @@ function requestBluetoothDevice() {
         deviceCache = device;
         deviceCache.addEventListener('gattserverdisconnected',
             handleDisconnection);
-
         return deviceCache;
       });
 }
