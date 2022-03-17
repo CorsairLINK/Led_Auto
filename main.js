@@ -7,9 +7,10 @@ let inputField = document.getElementById('input');
 
 let temp = document.getElementById('temp');
 let led13Button = document.getElementById('led13');
+/* 
 let led13send = '0';
 let flag_led13send = 0;
-
+*/
 // Кэш объекта выбранного устройства
 let deviceCache = null;
 // Кэш объекта характеристики
@@ -26,6 +27,7 @@ disconnectButton.addEventListener('click', function() {
   disconnect();
 });
 // При нажатии на кнопку LED13
+/*
 led13Button.addEventListener('click', function() {
   if (flag_led13send == 0) {
     led13send = '1';
@@ -36,12 +38,17 @@ led13Button.addEventListener('click', function() {
     flag_led13send = 0;
   }
 });
-// Обработка события отправки формы
+*/
+/* Обработка события отправки формы
+// Предотвратить отправку формы
+// Отправить содержимое текстового поля
+// Обнулить текстовое поле
+// Вернуть фокус на текстовое поле */
 sendForm.addEventListener('submit', function(event) {
-  event.preventDefault(); // Предотвратить отправку формы
-  send(inputField.value); // Отправить содержимое текстового поля
-  inputField.value = '';  // Обнулить текстовое поле
-  inputField.focus();     // Вернуть фокус на текстовое поле
+  event.preventDefault(); 
+  send(inputField.value); 
+  inputField.value = '';  
+  inputField.focus();     
 });
 
 // Запустить выбор Bluetooth устройства и подключиться к выбранному
