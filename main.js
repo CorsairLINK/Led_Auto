@@ -7,10 +7,10 @@ let inputField = document.getElementById('input');
 
 let temp = document.getElementById('temp');
 let led13Button = document.getElementById('led13');
-/* 
+
 let led13send = '0';
 let flag_led13send = 0;
-*/
+
 // Кэш объекта выбранного устройства
 let deviceCache = null;
 // Кэш объекта характеристики
