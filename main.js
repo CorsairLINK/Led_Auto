@@ -30,12 +30,12 @@ disconnectButton.addEventListener('click', function() {
 // При нажатии на кнопку LED13
 led13Button.addEventListener('click', function() {
   if (flag_led13send == 0) {
-    led13Info.style.background = 'red';
+    led13Info.style.background = 'gray';
     led13send = '1';
     flag_led13send = 1;
   }
   else if (flag_led13send == 1) {
-    led13Info.style.background = 'gray';
+    led13Info.style.background = 'red';
     led13send = '0';
     flag_led13send = 0;
   }
