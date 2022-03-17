@@ -111,6 +111,7 @@ function startNotifications(characteristic) {
 // Получение данных
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
+  get_temp(value);
   for (let c of value) {
     if (c === '\n') {
       let data = readBuffer.trim();
