@@ -35,6 +35,7 @@ led13Button.addEventListener('click', function() {
     led13send = '0';
     flag_led13send = 0;
   }
+  log(led13send);
   send(led13send);
 });
 
