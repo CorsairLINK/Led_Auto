@@ -111,12 +111,13 @@ function startNotifications(characteristic) {
 // Получение данных
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
-  get_temp(value);
+  
   for (let c of value) {
     if (c === '\n') {
       let data = readBuffer.trim();
       readBuffer = '';
       if (data) {
+        get_temp(data);
         receive(data);
       }
     }
@@ -141,7 +142,6 @@ function get_temp(data) {
   temp.innerHTML = String(data);
   send(led13send);
 }
-//temp.createTextNode(data);
 // Отключиться от подключенного устройства
 function disconnect() {
   if (deviceCache) {
