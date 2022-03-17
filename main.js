@@ -7,7 +7,7 @@ let inputField = document.getElementById('input');
 
 let temp = document.getElementById('temp');
 let led13Button = document.getElementById('led13');
-let led13send = 'led13';
+let led13send = 0;
 
 // Кэш объекта выбранного устройства
 let deviceCache = null;
@@ -26,7 +26,7 @@ disconnectButton.addEventListener('click', function() {
 });
 // При нажатии на кнопку LED13
 led13Button.addEventListener('click', function() {
-  send(led13send);
+  led13send = 1;
 });
 // Обработка события отправки формы
 sendForm.addEventListener('submit', function(event) {
@@ -79,9 +79,7 @@ function connectDeviceAndCacheCharacteristic(device) {
   if (device.gatt.connected && characteristicCache) {
     return Promise.resolve(characteristicCache);
   }
-
   log('Connecting to GATT server...');
-
   return device.gatt.connect().
       then(server => {
         log('GATT server connected, getting service...');
@@ -122,7 +120,6 @@ function handleCharacteristicValueChanged(event) {
       readBuffer = '';
       if (data) {
         receive(data);
-        get_temp(data);
       }
     }
     else {
@@ -144,6 +141,7 @@ function log(data, type = '') {
 
 function get_temp(data) {
   temp.innerHTML = String(data);
+  send(led13send);
 }
 //temp.createTextNode(data);
 // Отключиться от подключенного устройства
