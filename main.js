@@ -2,11 +2,20 @@
 let connectButton = document.getElementById('connect');
 let disconnectButton = document.getElementById('disconnect');
 let terminalContainer = document.getElementById('terminal');
-let temp = document.getElementById('temp');
-let led13Button = document.getElementById('led13');
 let sendForm = document.getElementById('send-form');
 let inputField = document.getElementById('input');
-let led13send = "led13";
+
+let temp = document.getElementById('temp');
+let led13Button = document.getElementById('led13');
+let led13send = 'led13';
+
+// Кэш объекта выбранного устройства
+let deviceCache = null;
+// Кэш объекта характеристики
+let characteristicCache = null;
+// Промежуточный буфер для входящих данных
+let readBuffer = '';
+
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
   connect();
@@ -26,12 +35,7 @@ sendForm.addEventListener('submit', function(event) {
   inputField.value = '';  // Обнулить текстовое поле
   inputField.focus();     // Вернуть фокус на текстовое поле
 });
-// Кэш объекта выбранного устройства
-let deviceCache = null;
-// Кэш объекта характеристики
-let characteristicCache = null;
-// Промежуточный буфер для входящих данных
-let readBuffer = '';
+
 // Запустить выбор Bluetooth устройства и подключиться к выбранному
 function connect() {
   return (deviceCache ? Promise.resolve(deviceCache) :
