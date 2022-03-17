@@ -11,6 +11,8 @@ let led13Button = document.getElementById('led13');
 let led13send = '1';
 let flag_led13send = 1;
 
+let led13Info = document.getElementById('led13_info');
+
 // Кэш объекта выбранного устройства
 let deviceCache = null;
 // Кэш объекта характеристики
@@ -28,10 +30,12 @@ disconnectButton.addEventListener('click', function() {
 // При нажатии на кнопку LED13
 led13Button.addEventListener('click', function() {
   if (flag_led13send == 0) {
+    led13Info.style.color = 'red';
     led13send = '1';
     flag_led13send = 1;
   }
   else if (flag_led13send == 1) {
+    led13Info.style.color = 'black';
     led13send = '0';
     flag_led13send = 0;
   }
