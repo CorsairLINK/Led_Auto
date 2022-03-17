@@ -8,8 +8,8 @@ let inputField = document.getElementById('input');
 let temp = document.getElementById('temp');
 let led13Button = document.getElementById('led13');
 
-let led13send = '0';
-let flag_led13send = 0;
+let led13send = '1';
+let flag_led13send = 1;
 
 // Кэш объекта выбранного устройства
 let deviceCache = null;
@@ -35,7 +35,6 @@ led13Button.addEventListener('click', function() {
     led13send = '0';
     flag_led13send = 0;
   }
-  log(led13send);
   send(led13send);
 });
 
