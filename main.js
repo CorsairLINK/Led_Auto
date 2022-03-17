@@ -7,7 +7,7 @@ let inputField = document.getElementById('input');
 
 let temp = document.getElementById('temp');
 let led13Button = document.getElementById('led13');
-let led13send = 0;
+let led13send = '0';
 
 // Кэш объекта выбранного устройства
 let deviceCache = null;
@@ -26,7 +26,7 @@ disconnectButton.addEventListener('click', function() {
 });
 // При нажатии на кнопку LED13
 led13Button.addEventListener('click', function() {
-  led13send = 1;
+  led13send = '1';
 });
 // Обработка события отправки формы
 sendForm.addEventListener('submit', function(event) {
