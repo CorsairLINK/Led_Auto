@@ -26,7 +26,6 @@ disconnectButton.addEventListener('click', function() {
   disconnect();
 });
 // При нажатии на кнопку LED13
-/*
 led13Button.addEventListener('click', function() {
   if (flag_led13send == 0) {
     led13send = '1';
@@ -36,8 +35,9 @@ led13Button.addEventListener('click', function() {
     led13send = '0';
     flag_led13send = 0;
   }
+  send(led13send);
 });
-*/
+
 /* Обработка события отправки формы
 // Предотвратить отправку формы
 // Отправить содержимое текстового поля
