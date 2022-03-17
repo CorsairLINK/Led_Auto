@@ -1,27 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключение файла стилей css -->
     <link href="styles.css" rel="stylesheet">
-    <meta name="theme-color" content="#ffffff">
+    <!-- Название вкладки -->
+    <title>CarLight Mobile App</title>
+    <!-- Подключение иконочного шрифта Font Awesome -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Кнопка подключения -->
-    <button id="connect" type="button">Подключиться</button>
+    <button id="connect" type="button">
+    	<i class="fa fa-bluetooth fa-2x"></i>
+    </button>
     <!-- Кнопка отключения -->
     <button id="disconnect" type="button">Отключиться</button>
     <!-- Блок вывода информации -->
     <div id="terminal" class="terminal"></div>
-
 <form id="send-form">
     <!-- Блок ввода текста -->
     <input id="input" type="text">
     <!-- Кнопка отправить -->
-    <button type="submit">Отправить</button>
+    <button type="submit">
+    	<i class="fa fa-paper-plane fa-2x"></i>
+    </button>
 </form>
 <!-- Блок вывода температуры -->
 <div id="temp" class="temp"></div>
+<!-- Кнопка LED -->
+    <button type="led13">
+    	LED13
+    </button>
+<!-- Подключение файла скрипта javaScript -->
 <script src="main.js"></script>
 </body>
 </html>

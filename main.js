@@ -3,8 +3,10 @@ let connectButton = document.getElementById('connect');
 let disconnectButton = document.getElementById('disconnect');
 let terminalContainer = document.getElementById('terminal');
 let temp = document.getElementById('temp');
+let led13Button = document.getElementById('led13');
 let sendForm = document.getElementById('send-form');
 let inputField = document.getElementById('input');
+let led13send = "led13";
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
   connect();
@@ -12,6 +14,10 @@ connectButton.addEventListener('click', function() {
 // Отключение от устройства при нажатии на кнопку Disconnect
 disconnectButton.addEventListener('click', function() {
   disconnect();
+});
+// При нажатии на кнопку LED13
+led13Button.addEventListener('click', function() {
+  send(led13send);
 });
 // Обработка события отправки формы
 sendForm.addEventListener('submit', function(event) {
