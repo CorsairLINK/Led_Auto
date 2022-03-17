@@ -8,6 +8,7 @@ let inputField = document.getElementById('input');
 let temp = document.getElementById('temp');
 let led13Button = document.getElementById('led13');
 let led13send = '0';
+let flag_led13send = 0;
 
 // Кэш объекта выбранного устройства
 let deviceCache = null;
@@ -26,7 +27,14 @@ disconnectButton.addEventListener('click', function() {
 });
 // При нажатии на кнопку LED13
 led13Button.addEventListener('click', function() {
-  led13send = '1';
+  if (flag_led13send == 0) {
+    led13send = '1';
+    flag_led13send = 1;
+  }
+  else if (flag_led13send == 1) {
+    led13send = '0';
+    flag_led13send = 0;
+  }
 });
 // Обработка события отправки формы
 sendForm.addEventListener('submit', function(event) {
@@ -111,13 +119,13 @@ function startNotifications(characteristic) {
 // Получение данных
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
-  
+  get_temp(value);
   for (let c of value) {
     if (c === '\n') {
       let data = readBuffer.trim();
       readBuffer = '';
       if (data) {
-        get_temp(data);
+        
         receive(data);
       }
     }
@@ -140,7 +148,6 @@ function log(data, type = '') {
 
 function get_temp(data) {
   temp.innerHTML = String(data);
-  send(led13send);
 }
 // Отключиться от подключенного устройства
 function disconnect() {
