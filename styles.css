@@ -19,7 +19,8 @@
 }
 .top {
 	border-style: solid;
-	border-color: red;
+	border-bottom-width: 3px;
+	border-bottom-color: #9254ad;
 }
 .button {
 	border: 10px;
@@ -30,24 +31,25 @@
 	margin-right: auto;
 }
 .connect {
-	font-size: 16px;
-	width: 40px;
-	height: 40px;
+	font-size: 22px;
+	width: 35px;
+	height: 35px;
 	border-radius: 50%;
+	margin-left: 150px;
 }
 .gear {
-	font-size: 18px;
+	font-size: 34px;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	margin-left: 155px;
+	margin-left: 10px;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .fa {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	margin: 0 auto;
 }
 body {
 	background: #1d1b33;
