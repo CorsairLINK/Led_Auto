@@ -18,14 +18,18 @@
 	height: 400px;
 }
 .button {
-	border-style: solid;
-	border-color: red;
-}
-.button_gear {
 	border: 10px;
-	font-size: 18px;
 	background: radial-gradient(circle at 30% 15%, #0DE1FD, #d1248f);
 	box-shadow: 5px 10px 20px rgba(252,0,122,0.3), -5px -10px 20px rgba(0,255,253,0.2);
+}
+.connect {
+	font-size: 16px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.gear {
+	font-size: 18px;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -41,7 +45,7 @@ body {
 	background: #1d1b33;
 }
 .terminal {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: normal;
 	font-family: 'Inter', sans-serif;
 }
