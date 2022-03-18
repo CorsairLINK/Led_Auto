@@ -22,7 +22,6 @@
 	border-color: red;
 }
 .button_gear {
-	text-align: center;
 	border: 10px;
 	font-size: 18px;
 	background: radial-gradient(circle at 30% 15%, #0DE1FD, #d1248f);
@@ -32,6 +31,11 @@
 	border-radius: 50%;
 	margin-left: 155px;
 	margin-top: 10px;
+}
+.fa {
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
 }
 body {
 	background: #1d1b33;
