@@ -20,7 +20,8 @@
 .top {
 	border-style: solid;
 	border-bottom-width: 3px;
-	border-bottom-color: #9254ad;
+	border-bottom-color: #ad54a1;
+	box-shadow: 0 0 10px #d1248f;
 }
 .button {
 	border: 10px;
