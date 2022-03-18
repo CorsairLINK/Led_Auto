@@ -11,8 +11,11 @@
     color: blue;
 }
 .wrapper {
+	border-style: solid;
+	border-color: red;
 	margin: 0 auto;
-	width: 500px;
+	width: 640px;
+	height: 860px;
 }
 body {
 	background: rgb(2,0,36);
