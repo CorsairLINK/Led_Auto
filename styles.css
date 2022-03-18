@@ -17,6 +17,10 @@
 	width: 640px;
 	height: 860px;
 }
+.button {
+	border-style: solid;
+	border-color: red;
+}
 body {
 	background: rgb(2,0,36);
 	background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(9,121,54,1) 58%, rgba(35,186,0,1) 100%);
