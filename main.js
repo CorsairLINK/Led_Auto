@@ -10,7 +10,6 @@ let led13Button = document.getElementById('led13');
 
 let led13send = '1';
 let flag_led13send = 1;
-
 let led13Info = document.getElementById('led13_info');
 
 // Кэш объекта выбранного устройства

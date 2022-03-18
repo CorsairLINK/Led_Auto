@@ -21,12 +21,32 @@
 	border-style: solid;
 	border-color: red;
 }
+.button_gear {
+	border: 10px;
+	font-size: 18px;
+	background: radial-gradient(circle at 30% 15%, #0DE1FD, #d1248f);
+	box-shadow: 5px 10px 20px rgba(252,0,122,0.3), -5px -10px 20px rgba(0,255,253,0.2);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 155px;
+	margin-top: 10px;
+}
 body {
-	background: rgb(2,0,36);
-	background: radial-gradient(circle at center, rgba(35,186,0,1) 0%, rgba(9,121,54,1) 25%, rgba(2,0,36,1) 100%);
-	color: #D4D1D5;
+	background: #1d1b33;
 	font-size: 16px;
 	font-weight: normal;
 	font-family: 'Inter', sans-serif;
 }
-/* height: 100vh; */
+/* 
+	background: radial-gradient(circle at center, rgba(35,186,0,1) 0%, rgba(9,121,54,1) 25%, rgba(2,0,36,1) 100%);
+
+	border-style: solid;
+	border-color: red;
+
+	color: #e3bff0;
+
+	radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B);
+
+	linear-gradient(135deg, #0DE1FD, #FC007A);
+*/
