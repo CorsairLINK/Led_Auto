@@ -39,6 +39,8 @@
 }
 body {
 	background: #1d1b33;
+}
+.terminal {
 	font-size: 16px;
 	font-weight: normal;
 	font-family: 'Inter', sans-serif;
@@ -49,7 +51,6 @@ body {
 	border-style: solid;
 	border-color: red;
 
-	color: #e3bff0;
 
 	radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B);
 
