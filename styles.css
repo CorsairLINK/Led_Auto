@@ -14,8 +14,8 @@
 	border-style: solid;
 	border-color: red;
 	margin: 0 auto;
-	width: 640px;
-	height: 860px;
+	width: 320px;
+	height: 500px;
 }
 .button {
 	border-style: solid;
@@ -23,7 +23,7 @@
 }
 body {
 	background: rgb(2,0,36);
-	background: linear-gradient(172deg, rgba(2,0,36,1) 0%, rgba(9,121,54,1) 58%, rgba(35,186,0,1) 100%);
+	background: radial-gradient(circle at center, rgba(35,186,0,1) 0%, rgba(9,121,54,1) 25%, rgba(2,0,36,1) 100%);
 	color: #D4D1D5;
 	font-size: 16px;
 	font-weight: normal;
