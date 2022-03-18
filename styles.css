@@ -22,6 +22,7 @@
 	border-color: red;
 }
 .button_gear {
+	text-align: center;
 	border: 10px;
 	font-size: 18px;
 	background: radial-gradient(circle at 30% 15%, #0DE1FD, #d1248f);
