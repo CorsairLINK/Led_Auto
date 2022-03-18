@@ -12,15 +12,22 @@
 }
 .wrapper {
 	border-style: solid;
-	border-color: red;
+	border-color: white;
 	margin: 0 auto;
 	width: 300px;
 	height: 400px;
+}
+.top {
+	border-style: solid;
+	border-color: red;
 }
 .button {
 	border: 10px;
 	background: radial-gradient(circle at 30% 15%, #0DE1FD, #d1248f);
 	box-shadow: 5px 10px 20px rgba(252,0,122,0.3), -5px -10px 20px rgba(0,255,253,0.2);
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 .connect {
 	font-size: 16px;
@@ -40,6 +47,7 @@
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	margin: 0 auto;
 }
 body {
 	background: #1d1b33;
