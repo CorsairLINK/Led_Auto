@@ -1,6 +1,5 @@
 // Получение ссылок на элементы UI
 let connectButton = document.getElementById('connect');
-let disconnectButton = document.getElementById('disconnect');
 let terminalContainer = document.getElementById('terminal');
 let sendForm = document.getElementById('send-form');
 let inputField = document.getElementById('input');
@@ -11,38 +10,14 @@ let color = document.getElementById('color');
 let buttonFRTLHRED = document.getElementById('buttonFRTLHRED');
 let buttonFRTLHBLUE = document.getElementById('buttonFRTLHBLUE');
 
-
-
-buttonFRTLHRED.addEventListener('click', function() {
-  color.style.background = 'red';
-  send('red');
-});
-buttonFRTLHBLUE.addEventListener('click', function() {
-  color.style.background = 'blue';
-  send('blue');
-});
-
-// Кэш объекта выбранного устройства
 let deviceCache = null;
-// Кэш объекта характеристики
 let characteristicCache = null;
-// Промежуточный буфер для входящих данных
 let readBuffer = '';
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
   connect();
 });
-// Отключение от устройства при нажатии на кнопку Disconnect
-disconnectButton.addEventListener('click', function() {
-  disconnect();
-});
 
-sendForm.addEventListener('submit', function(event) {
-  event.preventDefault(); 
-  send(inputField.value); 
-  inputField.value = '';  
-  inputField.focus();     
-});
 // Запустить выбор Bluetooth устройства и подключиться к выбранному
 function connect() {
   return (deviceCache ? Promise.resolve(deviceCache) :
@@ -65,6 +40,7 @@ function requestBluetoothDevice() {
         return deviceCache;
       });
 }
+
 // Обработчик разъединения
 function handleDisconnection(event) {
   let device = event.target;

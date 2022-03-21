@@ -19,10 +19,6 @@ body {
 #terminal div.in {
     color: blue;
 }
-.terminal {
-	border-style: solid;
-	border-color: green;
-}
 /* Стиль надписи text*/
 .text {
 	position: absolute;
