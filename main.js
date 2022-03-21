@@ -6,11 +6,21 @@ let sendForm = document.getElementById('send-form');
 let inputField = document.getElementById('input');
 
 let temp = document.getElementById('temp');
-let led13Button = document.getElementById('led13');
 
-let led13send = '1';
-let flag_led13send = 1;
-let led13Info = document.getElementById('led13_info');
+let color = document.getElementById('color');
+let buttonFRTLHRED = document.getElementById('buttonFRTLHRED');
+let buttonFRTLHBLUE = document.getElementById('buttonFRTLHBLUE');
+
+
+
+buttonFRTLHRED.addEventListener('click', function() {
+  color.style.background = 'red';
+  send('red');
+});
+buttonFRTLHBLUE.addEventListener('click', function() {
+  color.style.background = 'blue';
+  send('blue');
+});
 
 // Кэш объекта выбранного устройства
 let deviceCache = null;
@@ -26,26 +36,7 @@ connectButton.addEventListener('click', function() {
 disconnectButton.addEventListener('click', function() {
   disconnect();
 });
-// При нажатии на кнопку LED13
-led13Button.addEventListener('click', function() {
-  if (flag_led13send == 0) {
-    led13Info.style.background = 'gray';
-    led13send = '1';
-    flag_led13send = 1;
-  }
-  else if (flag_led13send == 1) {
-    led13Info.style.background = 'red';
-    led13send = '0';
-    flag_led13send = 0;
-  }
-  send(led13send);
-});
 
-/* Обработка события отправки формы
-// Предотвратить отправку формы
-// Отправить содержимое текстового поля
-// Обнулить текстовое поле
-// Вернуть фокус на текстовое поле */
 sendForm.addEventListener('submit', function(event) {
   event.preventDefault(); 
   send(inputField.value); 
@@ -77,8 +68,6 @@ function requestBluetoothDevice() {
 // Обработчик разъединения
 function handleDisconnection(event) {
   let device = event.target;
-  log('"' + device.name +
-      '" bluetooth device disconnected, trying to reconnect...');
   connectDeviceAndCacheCharacteristic(device).
       then(characteristic => startNotifications(characteristic)).
       catch(error => log(error));
@@ -88,18 +77,14 @@ function connectDeviceAndCacheCharacteristic(device) {
   if (device.gatt.connected && characteristicCache) {
     return Promise.resolve(characteristicCache);
   }
-  log('Connecting to GATT server...');
   return device.gatt.connect().
       then(server => {
-        log('GATT server connected, getting service...');
         return server.getPrimaryService(0xFFE0);
       }).
       then(service => {
-        log('Service found, getting characteristic...');
         return service.getCharacteristic(0xFFE1);
       }).
       then(characteristic => {
-        log('Characteristic found');
         characteristicCache = characteristic;
         return characteristicCache;
       });
@@ -107,10 +92,8 @@ function connectDeviceAndCacheCharacteristic(device) {
 
 // Включение получения уведомлений об изменении характеристики
 function startNotifications(characteristic) {
-  log('Starting notifications...');
   return characteristic.startNotifications().
       then(() => {
-        log('Notifications started');
         characteristic.addEventListener('characteristicvaluechanged',
             handleCharacteristicValueChanged);
       });
@@ -147,16 +130,10 @@ function get_temp(data) {
 // Отключиться от подключенного устройства
 function disconnect() {
   if (deviceCache) {
-    log('Disconnecting from "' + deviceCache.name + '" bluetooth device...');
     deviceCache.removeEventListener('gattserverdisconnected',
         handleDisconnection);
     if (deviceCache.gatt.connected) {
       deviceCache.gatt.disconnect();
-      log('"' + deviceCache.name + '" bluetooth device disconnected');
-    }
-    else {
-      log('"' + deviceCache.name +
-          '" bluetooth device is already disconnected');
     }
   }
 

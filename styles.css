@@ -3,6 +3,12 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 14px;
+    font-weight: normal;
+	font-family: 'Inter', sans-serif;
+}
+body {
+	background: #1d1b33;
 }
 #terminal div {
     color: gray;
@@ -13,14 +19,36 @@
 #terminal div.in {
     color: blue;
 }
+.terminal {
+	border-style: solid;
+	border-color: green;
+}
+/* Стиль надписи text*/
+.text {
+	position: absolute;
+	top: 18px;
+	left: 8px;
+	font-size: 34px;
+	font-weight: bold;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-color: text;
+	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
+	text-shadow: 
+		2px 3px 20px rgba(252,0,122,0.4),
+		-2px -3px 20px rgba(0,255,253,0.2);
+}
 .wrapper {
+	position: relative;
 	border-style: solid;
 	border-color: white;
 	margin: 0 auto;
-	width: 306px;
+	width: 308px;
 	height: 420px;
 }
 .top {
+	position: relative;
+	height: 68px;
 	border-style: solid;
 	border-top: transparent;
 	border-left: transparent;
@@ -30,44 +58,80 @@
 	box-shadow: 0 0 10px #d1248f;
 }
 .button {
+	position: relative;
 	border: 10px;
+	text-align: center;
 	background: radial-gradient(circle at 30% 15%, #0DE1FD, #d1248f);
 	box-shadow: 5px 10px 20px rgba(252,0,122,0.3), -5px -10px 20px rgba(0,255,253,0.2);
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 }
 .connect {
+	position: absolute;
+	right: 66px;
+	top: 22px;
 	font-size: 22px;
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
-	margin-left: 100px;
 }
 .gear {
+	position: absolute;
+	right: 8px;
+	top: 8px;
 	font-size: 34px;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	margin-left: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
 }
+.button2 {
+	position: relative;
+	width: 80px;
+	height: 40px;
 
-body {
-	background: #1d1b33;
+	background-color: transparent;
+	border: 3px solid transparent;
+	border-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
+	border-image-slice: 1;
+	
+	box-shadow: 0 0 10px #d1248f;
+
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-color: text;
+	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
 }
-.terminal {
-	font-size: 14px;
-	font-weight: normal;
-	font-family: 'Inter', sans-serif;
+.FRT {
+	position: absolute;
+	top: 100px;
+}
+.RR {
+	position: absolute;
+	top: 160px;
+}
+.LH {
+	position: absolute;
+	left: 40px;
+}
+.RH {
+	position: absolute;
+	right: 40px;
+}
+.color {
+	position: absolute;
+	top: 76px;
+	right: 55px;
+	width: 200px;
+	height: 20px;
+	border-style: solid;
+	border-color: white;
 }
 /* 
 	background: radial-gradient(circle at center, rgba(35,186,0,1) 0%, rgba(9,121,54,1) 25%, rgba(2,0,36,1) 100%);
 
 	border-style: solid;
 	border-color: red;
-
 
 	radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B);
 

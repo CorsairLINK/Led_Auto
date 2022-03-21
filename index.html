@@ -13,35 +13,38 @@
 </head>
 <body>
     <div class="wrapper">
+        <!-- Шапка сайта -->
         <div class="top">
-            <!-- Индикация светодиода -->
-            <button style="background: white" id="led13_info" class="led13_info">
-                <i class="fa fa-sun-o"></i>
-            </button>
+            <!-- Надпись -->
+            <div class="text">
+                Car Light
+            </div>
             <!-- Кнопка подключения -->
             <button id="connect" type="button" class="button connect">
                 <i class="fa fa-bluetooth-b"></i>
             </button>
-            <!-- Кнопка отключения -->
+            <!-- Кнопка настройки -->
             <button id="disconnect" type="button" class="button gear">
                 <i class="fa fa-cog"></i>
             </button>
         </div>
         <!-- Блок вывода информации -->
         <div id="terminal" class="terminal"></div>
-        <form id="send-form">
-            <!-- Блок ввода текста -->
-            <input id="input" type="text">
-            <!-- Кнопка отправить -->
-            <button type="submit">
-                <i class="fa fa-paper-plane fa-2x"></i>
-            </button>
-        </form>
-        <!-- Блок вывода температуры -->
-        <div id="temp" class="temp"></div>
-        <!-- Кнопка LED -->
-        <button id="led13" type="led13">
-            LED13
+        <!-- Фронт левый -->
+        <button onclick="document.location='page-FRT-LH.html'" id="button-FRT-LH" type="button-FRT-LH" class="button2 FRT LH">
+            FRT LH
+        </button>
+        <!-- Фронт правый -->
+        <button id="button-FRT-LH" type="button-FRT-LH" class="button2 FRT RH">
+            FRT RH
+        </button>
+        <!-- Тыл левый -->
+        <button id="button-FRT-LH" type="button-FRT-LH" class="button2 RR LH">
+            RR LH
+        </button>
+        <!-- Тыл правый -->
+        <button id="button-FRT-LH" type="button-FRT-LH" class="button2 RR RH">
+            RR RH
         </button>
     </div>
     <!-- Подключение файла скрипта javaScript -->

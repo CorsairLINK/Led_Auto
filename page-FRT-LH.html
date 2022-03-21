@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключение файла стилей css -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Название вкладки -->
+    <title>FRT LH</title>
+    <!-- Подключение иконочного шрифта Font Awesome -->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Шапка сайта -->
+        <div class="top">
+            <!-- Надпись -->
+            <div class="text">
+                FRT LH
+            </div>
+            <!-- Кнопка подключения -->
+            <button id="connect" type="button" class="button connect">
+                <i class="fa fa-bluetooth-b"></i>
+            </button>
+            <!-- Кнопка назад -->
+            <button onclick="document.location='index.html'" id="back" type="back" class="button gear">
+                <i class="fa fa-reply"></i>
+            </button>
+        </div>
+        <!-- Блок вывода цвета -->
+        <button style="background: transparent" id="color" type="color" class="color">color</button>
+        <!-- Установка красного цвета -->
+        <button id="buttonFRTLHRED" type="buttonFRTLHRED" class="button2 RR LH">
+            RED
+        </button>
+        <!-- Установка синего цвета -->
+        <button id="buttonFRTLHBLUE" type="buttonFRTLHBLUE" class="button2 FRT RH">
+            BLUE
+        </button>
+        <!-- Блок вывода информации -->
+        <div id="terminal" class="terminal"></div>
+    </div>
+    <!-- Подключение файла скрипта javaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
