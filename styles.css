@@ -39,7 +39,7 @@ body {
 	border-style: solid;
 	border-color: white;
 	margin: 0 auto;
-	width: 308px;
+	width: 310px;
 	height: 420px;
 }
 .top {
@@ -82,21 +82,17 @@ body {
 	position: relative;
 	width: 80px;
 	height: 40px;
-
-	background-color: transparent;
-	border: 3px solid transparent;
-	border-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
-	border-image-slice: 1;
-	
-	box-shadow: 0 0 10px #d1248f;
-
 	text-align: center;
 	font-weight: bold;
 	font-size: 18px;
+	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
 	color: transparent;
 	-webkit-background-clip: text;
-	background-color: text;
-	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
+	background-clip: text;
+	border: 3px solid transparent;
+	border-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
+	border-image-slice: 1;
+	box-shadow: 0 0 10px #d1248f;
 }
 .FRT {
 	position: absolute;
