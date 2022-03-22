@@ -24,12 +24,15 @@ body {
 	position: absolute;
 	top: 18px;
 	left: 8px;
+
 	font-size: 34px;
 	font-weight: bold;
+
 	color: transparent;
 	-webkit-background-clip: text;
 	background-color: text;
 	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
+
 	text-shadow: 
 		2px 3px 20px rgba(252,0,122,0.4),
 		-2px -3px 20px rgba(0,255,253,0.2);
@@ -41,6 +44,7 @@ body {
 	margin: 0 auto;
 	width: 310px;
 	height: 420px;
+	background-image: url(images/2.jpg); /* Путь к фоновому изображению */
 }
 .top {
 	position: relative;
@@ -86,6 +90,11 @@ body {
 	text-align: center;
 	font-weight: bold;
 	font-size: 18px;
+
+	color: transparent;
+	-webkit-background-clip: text;
+	background-color: text;
+	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
 }
 /*  
 	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
