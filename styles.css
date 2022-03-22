@@ -82,9 +82,11 @@ body {
 	position: relative;
 	width: 80px;
 	height: 40px;
+
 	text-align: center;
 	font-weight: bold;
 	font-size: 18px;
+
 	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
 	color: transparent;
 
@@ -94,11 +96,14 @@ body {
 	-o-background-clip: text;
 	background-clip: text;
 
+	
+}
+/*
 	border: 3px solid transparent;
 	border-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
 	border-image-slice: 1;
 	box-shadow: 0 0 10px #d1248f;
-}
+*/
 .FRT {
 	position: absolute;
 	top: 100px;
