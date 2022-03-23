@@ -94,6 +94,10 @@ body {
 	box-shadow: 0 0 10px #d1248f;
 	border-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
 	border-image-slice: 1;
+	border-width: 3px;
+
+	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
+	
 }
 /*  
 	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
