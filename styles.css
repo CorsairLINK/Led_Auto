@@ -44,7 +44,7 @@ body {
 	margin: 0 auto;
 	width: 310px;
 	height: 420px;
-	background-image: url(images/2.jpg); /* Путь к фоновому изображению */
+	background-image: url(images/22.jpg); /* Путь к фоновому изображению */
 }
 .top {
 	position: relative;
@@ -91,19 +91,14 @@ body {
 	font-weight: bold;
 	font-size: 18px;
 
-	color: transparent;
-	-webkit-background-clip: text;
-	background-color: text;
-	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
+	box-shadow: 0 0 10px #d1248f;
+	border-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
+	border-image-slice: 1;
 }
 /*  
 	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
 	-webkit-text-fill-color: transparent;
 	color: transparent;
-
-	border-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
-	border-image-slice: 1;
-	box-shadow: 0 0 10px #d1248f;
 
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
