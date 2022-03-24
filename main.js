@@ -6,13 +6,16 @@ let inputField = document.getElementById('input');
 
 let temp = document.getElementById('temp');
 
-let color = document.getElementById('color');
+
 let buttonFRTLHRED = document.getElementById('buttonFRTLHRED');
 let buttonFRTLHBLUE = document.getElementById('buttonFRTLHBLUE');
 
 let deviceCache = null;
 let characteristicCache = null;
 let readBuffer = '';
+
+
+
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
   connect();

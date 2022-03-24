@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Подключение файла стилей css -->
     <link href="styles.css" rel="stylesheet">
+    <link href="page-FRT-LH.css" rel="stylesheet">
     <!-- Название вкладки -->
     <title>FRT LH</title>
     <!-- Подключение иконочного шрифта Font Awesome -->
@@ -31,16 +32,19 @@
         <!-- Блок вывода цвета -->
         <button style="background: transparent" id="color" type="color" class="color"></button>
         <!-- Ползунок выбора КРАСНОГО цвета -->
-        <div class="slidecontainer slide-red">
-            <input type="range" min="1" max="255" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">
+            <input type="range" min="0" max="255" value="0" class="slider slide-red" id="myRange-red">
+            <output id="rangevalue-red" class="rangevalue-red">0</output>
         </div>
         <!-- Ползунок выбора ЗЕЛЕНОГО цвета -->
-        <div class="slidecontainer slide-green">
-            <input type="range" min="1" max="255" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">
+            <input type="range" min="0" max="255" value="0" class="slider slide-green" id="myRange-green">
+            <output id="rangevalue-green" class="rangevalue-green">0</output>
         </div>
         <!-- Ползунок выбора СИНЕГО цвета -->
-        <div class="slidecontainer slide-blue">
-            <input type="range" min="1" max="255" value="0" class="slider" id="myRange">
+        <div class="slidecontainer">
+            <input type="range" min="0" max="255" value="0" class="slider slide-blue" id="myRange-blue">
+            <output id="rangevalue-blue" class="rangevalue-blue">0</output>
         </div>
         <!-- Блок вывода информации -->
         <div id="terminal" class="terminal"></div>
