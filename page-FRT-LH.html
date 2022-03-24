@@ -29,15 +29,19 @@
             </button>
         </div>
         <!-- Блок вывода цвета -->
-        <button style="background: transparent" id="color" type="color" class="color">color</button>
-        <!-- Установка красного цвета -->
-        <button id="buttonFRTLHRED" type="buttonFRTLHRED" class="button2 RR LH">
-            <div class="textButton">RED</div>
-        </button>
-        <!-- Установка синего цвета -->
-        <button id="buttonFRTLHBLUE" type="buttonFRTLHBLUE" class="button2 RR RH">
-            <div class="textButton">BLUE</div>
-        </button>
+        <button style="background: transparent" id="color" type="color" class="color"></button>
+        <!-- Ползунок выбора КРАСНОГО цвета -->
+        <div class="slidecontainer slide-red">
+            <input type="range" min="1" max="255" value="0" class="slider" id="myRange">
+        </div>
+        <!-- Ползунок выбора ЗЕЛЕНОГО цвета -->
+        <div class="slidecontainer slide-green">
+            <input type="range" min="1" max="255" value="0" class="slider" id="myRange">
+        </div>
+        <!-- Ползунок выбора СИНЕГО цвета -->
+        <div class="slidecontainer slide-blue">
+            <input type="range" min="1" max="255" value="0" class="slider" id="myRange">
+        </div>
         <!-- Блок вывода информации -->
         <div id="terminal" class="terminal"></div>
     </div>
