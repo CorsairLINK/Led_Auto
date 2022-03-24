@@ -5,9 +5,9 @@ let output_green = document.getElementById('rangevalue-green');
 let slider_blue = document.getElementById('myRange-blue');
 let output_blue = document.getElementById('rangevalue-blue');
 let color = document.getElementById('color');
-let FRT_LH_R = 0;
-let FRT_LH_G = 0;
-let FRT_LH_B = 0;
+let RR_RH_R = 0;
+let RR_RH_G = 0;
+let RR_RH_B = 0;
 
 output_red.innerHTML = slider_red.value;
 output_green.innerHTML = slider_green.value;
@@ -15,20 +15,20 @@ output_blue.innerHTML = slider_blue.value;
 
 slider_red.oninput = function() {
     output_red.innerHTML = this.value;
-    FRT_LH_R = this.value;
-    color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-    send('lflr' + FRT_LH_R );
+    RR_RH_R = this.value;
+    color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
+    send('lrrr' + RR_RH_R );
 }
 slider_green.oninput = function() {
     output_green.innerHTML = this.value;
-    FRT_LH_G = this.value;
-    color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-    send('lflg' + FRT_LH_G );
+    RR_RH_G = this.value;
+    color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
+    send('lrrg' + RR_RH_G );
 }
 slider_blue.oninput = function() {
     output_blue.innerHTML = this.value;
-    FRT_LH_B = this.value;
-    color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-    send('lflb' + FRT_LH_B );
+    RR_RH_B = this.value;
+    color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
+    send('lrrb' + RR_RH_B );
 }
 

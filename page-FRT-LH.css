@@ -5,6 +5,7 @@
 .slider {
 	position: relative;
 	width: 100%;
+    height: 20px;
 	-webkit-appearance: none;
     appearance: none;
 	border-radius: 8px;
@@ -16,8 +17,8 @@
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 	border-radius: 50%;
     background: radial-gradient(circle at 30% 15%, #0DE1FD, #d1248f);
 	box-shadow: 1px 2px 2px rgba(252,0,122,0.3), -1px -2px 5px rgba(0,255,253,0.2);
@@ -25,7 +26,7 @@
 }
 .slide-red {
 	position: relative;
-	top: 50px;
+	top: 70px;
 	background: rgba(252,0,0,0.3);
 }
 .slide-green {
@@ -35,13 +36,13 @@
 }
 .slide-blue {
 	position: relative;
-	top: 90px;
+	top: 70px;
 	background: rgba(0,0,255,0.3);
 }
 .rangevalue-red {
     font-size: 22px;
 	font-weight: bold;
-    top: 21px;
+    top: 43px;
     left: 240px;
     position: relative;
 	color: transparent;
@@ -54,7 +55,7 @@
 .rangevalue-green {
     font-size: 22px;
 	font-weight: bold;
-    top: 41px;
+    top: 43px;
     left: 240px;
     position: relative;
 	color: transparent;
@@ -67,7 +68,7 @@
 .rangevalue-blue {
     font-size: 22px;
 	font-weight: bold;
-    top: 61px;
+    top: 43px;
     left: 240px;
     position: relative;
 	color: transparent;
