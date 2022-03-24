@@ -17,18 +17,18 @@ slider_red.oninput = function() {
     output_red.innerHTML = this.value;
     RR_LH_R = this.value;
     color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-    send('lrlr' + RR_LH_R );
+    send('lflr' + RR_LH_R );
 }
 slider_green.oninput = function() {
     output_green.innerHTML = this.value;
     RR_LH_G = this.value;
     color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-    send('lrlg' + RR_LH_G );
+    send('lflg' + RR_LH_G );
 }
 slider_blue.oninput = function() {
     output_blue.innerHTML = this.value;
     RR_LH_B = this.value;
     color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-    send('lrlb' + RR_LH_B );
+    send('lflb' + RR_LH_B );
 }
 
