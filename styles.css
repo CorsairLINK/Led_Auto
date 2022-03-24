@@ -94,7 +94,7 @@ body {
 		-1px -1px 10px #0DE1FD;
 
 	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
-	background-clip: text;
+	-webkit-background-clip: text;
 }
 /*  
 	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
