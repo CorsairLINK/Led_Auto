@@ -8,7 +8,7 @@
 	font-family: 'Inter', sans-serif;
 }
 body {
-	background: #1d1b33;
+	background: #333333;
 }
 #terminal div {
     color: gray;
@@ -28,13 +28,11 @@ body {
 	font-size: 34px;
 	font-weight: bold;
 
-	color: transparent;
-	-webkit-background-clip: text;
-	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
+	color: rgb(35,200,120);
 
 	text-shadow: 
-		2px 3px 20px rgba(252,0,122,0.4),
-		-2px -3px 20px rgba(0,255,253,0.2);
+		0px 0px 15px rgba(35,186,90,0.4),
+		-2px -3px 5px rgba(0,0,0,0.6);
 }
 .wrapper {
 	position: relative;
@@ -43,25 +41,27 @@ body {
 	margin: 0 auto;
 	width: 310px;
 	height: 420px;
-	background-image: url(images/22.jpg); /* Путь к фоновому изображению */
+	background: #333333;
 }
 .top {
 	position: relative;
-	height: 68px;
-	border-style: solid;
-	border-top: transparent;
-	border-left: transparent;
-	border-right: transparent;
-	border-bottom-width: 3px;
-	border-bottom-color: #ad54a1;
-	box-shadow: 2px 2px 10px #d1248f;
+	height: 70px;
+	
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
 }
 .button {
+	z-index: 2;
 	position: relative;
-	border: 10px;
+	border: 10px solid;
 	text-align: center;
-	background: radial-gradient(circle at 30% 15%, #0DE1FD, #d1248f);
-	box-shadow: 5px 10px 20px rgba(252,0,122,0.3), -5px -10px 20px rgba(0,255,253,0.2);
+	background: #383838;
+	border-color: rgba(0,0,0,0.2);
+	border-width: 2px;
+	box-shadow: 1px 1px 2px rgba(252,255,255,0.2),
+		-2px -2px 5px rgba(0,0,0,0.8);
+	color: rgb(35,200,120);
+	text-shadow: 
+		0px 0px 10px rgba(35,200,120,0.1);
 }
 .connect {
 	position: absolute;
@@ -90,13 +90,13 @@ body {
 	text-align: center;
 	font-weight: bold;
 	font-size: 18px;
-
-	box-shadow: 1px 1px 12px #d1248f,
-		-1px -1px 10px #0DE1FD;
-	
-	border-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
-	border-image-slice: 1;
+	background: #383838;
+	box-shadow: -1px -1px 5px rgba(252,255,255,0.2),
+		1px 1px 2px rgba(0,0,0,0.8);		
+	border: solid;
+	border-color: rgba(0,0,0,0.2);
 	border-width: 3px;
+	border-radius: 10px;
 	background: transparent;
 
 }
@@ -104,9 +104,7 @@ body {
 	font-weight: bold;
 	font-size: 18px;
 
-	background-image: linear-gradient(120deg, #0DE1FD, #d1248f, fuchsia);
-	-webkit-background-clip: text;
-	color: transparent;
+	color: rgb(35,200,120);
 }
 .FRT {
 	position: absolute;
