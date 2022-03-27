@@ -51,8 +51,7 @@
 	color: rgb(0, 179, 96);
 
 	text-shadow: 
-		0px 0px 15px rgba(35,186,90,0.4),
-		-2px -3px 5px rgba(0,0,0,0.6);
+		0px 0px 15px rgba(35,186,90,0.3);
 }
 .rangevalue-green {
     font-size: 22px;
@@ -64,8 +63,7 @@
 	color: rgb(0, 179, 96);
 
 	text-shadow: 
-		0px 0px 15px rgba(35,186,90,0.4),
-		-2px -3px 5px rgba(0,0,0,0.6);
+		0px 0px 15px rgba(35,186,90,0.3);
 }
 .rangevalue-blue {
     font-size: 22px;
@@ -77,8 +75,7 @@
 	color: rgb(0, 179, 96);
 
 	text-shadow: 
-		0px 0px 5px rgba(35,186,90,0.4),
-		-2px -3px 5px rgba(0,0,0,0.6);
+		0px 0px 5px rgba(35,186,90,0.3);
 }
 .color {
 	position: absolute;

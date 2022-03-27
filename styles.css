@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 * {
     margin: 0;
     padding: 0;
     font-size: 14px;
     font-weight: normal;
-	font-family: 'Teko', sans-serif;
+	font-family: 'Indie Flower', cursive;
+	/*font-family: 'Teko', sans-serif;*/
 	/*font-family: 'Inter', sans-serif;*/
 	--text-color: rgb(0, 179, 96);
 }
@@ -26,10 +29,10 @@ body {
 /* Стиль надписи text*/
 .text {
 	position: absolute;
-	top: 18px;
-	left: 8px;
+	top: 12px;
+	left: 18px;
 
-	font-size: 40px;
+	font-size: 38px;
 	font-weight: bold;
 
 	color: var(--text-color);
@@ -43,8 +46,8 @@ body {
 	position: relative;
 	
 	margin: 0 auto;
-	width: 310px;
-	height: 420px;
+	width: 314px;
+	height: 428px;
 	/*background-image: url(images/2222.jpg);
 	background-repeat: no-repeat left top;
 	background-size: 100% 100%;*/
@@ -57,6 +60,15 @@ body {
 	box-shadow: 2px 2px 10px rgb(2, 18, 18);
 	border-bottom: 3px solid;
 	border-bottom-color: rgba(0,0,0,0.2);
+}
+.bottom {
+	position: absolute;
+	border-top: 3px solid;
+	border-top-color: rgba(0,0,0,0.2);
+	box-shadow: -2px -2px 10px rgb(2, 18, 18);
+	height: 70px;
+	width: 314px;
+	bottom: 0px;
 }
 .button {
 	z-index: 2;
@@ -74,7 +86,22 @@ body {
 	text-align: center;
 	color: var(--text-color);
 	text-shadow: 
-		0px 0px 20px rgba(0, 179, 96, 0.3);
+		0px 0px 15px rgba(0, 179, 96, 0.3);
+}
+.button3 {
+	z-index: 2;
+	position: relative;
+	
+	background: rgb(59, 75, 75);
+	
+	border: 10px solid;
+	border-color: var(--text-color);
+	border-width: 2px;
+
+	text-align: center;
+	color: rgba(0,0,0,0.4);
+	/*text-shadow: 
+		0px 0px 15px rgba(0, 179, 96, 0.3);*/
 }
 .connect {
 	position: absolute;
@@ -122,9 +149,9 @@ body {
 .textButton {
 	position: absolute;
 	text-align: center;
-	left: 12px;
+	left: 10px;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 18px;
 	
 	line-height: 4px;
 	color: var(--text-color);
@@ -145,6 +172,66 @@ body {
 	position: absolute;
 	right: 40px;
 }
+/* BOTTOM */
+.legs {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+
+	font-size: 34px;
+	line-height: 16px;
+
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+}
+.panel {
+	position: absolute;
+	right: 95px;
+	top: 10px;
+
+	font-size: 32px;
+	text-align: center;
+	line-height: 16px;
+
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+}
+.lenta {
+	position: absolute;
+	left: 95px;
+	top: 10px;
+
+	font-size: 34px;
+	line-height: 16px;
+
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+}
+.temp {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+
+	font-size: 34px;
+	line-height: 16px;
+
+	width: 50px;
+	height: 50px;
+
+	border-radius: 50%;
+}
+.fa-tachometer {
+	position: absolute;
+	bottom: 10px;
+	right: 7px;
+}
+
 
 
 /* 
