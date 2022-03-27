@@ -184,6 +184,6 @@ function temp_center() {
   center.innerHTML = '<button onclick="document.location=' + 'page-FRT-LH.html"' + ' id="button-FRT-LH" type="button-FRT-LH" class="button2 FRT LH"><div class="textButton">FRT LH</div></button>';
 
 }
-// center.insertAdjacentHTML('<button id="button-FRT-LH" type="button-FRT-LH" class="button2 FRT LH">FRT LH</button>');
+// center.insertAdjacentHTML('<button id="button-FRT-LH" type="button-FRT-LH" class="button-center FRT LH">FRT LH</button>');
 
 // rgb(0, 179, 96)  rgba(0,0,0,0.4)
