@@ -6,14 +6,12 @@ let inputField = document.getElementById('input');
 
 let temp = document.getElementById('temp');
 
-
 let buttonFRTLHRED = document.getElementById('buttonFRTLHRED');
 let buttonFRTLHBLUE = document.getElementById('buttonFRTLHBLUE');
 
 let deviceCache = null;
 let characteristicCache = null;
 let readBuffer = '';
-
 
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
@@ -147,7 +145,6 @@ function send(data) {
 function writeToCharacteristic(characteristic, data) {
   characteristic.writeValue(new TextEncoder().encode(data));
 }
-
 
 
 // rgb(0, 179, 96)  rgba(0,0,0,0.4)
