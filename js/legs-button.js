@@ -18,6 +18,7 @@ let ALL_R = 0;
 let ALL_G = 0;
 let ALL_B = 0;
 
+let slp = 25;
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -262,11 +263,11 @@ function listner_main () {
 		    ALL_R = this.value;
 		    color.style.background = 'rgb(' + ALL_R + ", " + ALL_G + ", " + ALL_B + ")";
 		    send('lrrr' + ALL_R );
-			sleep(100);
+			sleep(slp);
 			send('lrlr' + ALL_R );
-			sleep(100);
+			sleep(slp);
 			send('lfrr' + ALL_R );
-			sleep(100);
+			sleep(slp);
 			send('lflr' + ALL_R );
 			FRT_LH_R = ALL_R;
 			FRT_RH_R = ALL_R;
@@ -278,11 +279,11 @@ function listner_main () {
 		    ALL_G = this.value;
 		    color.style.background = 'rgb(' + ALL_R + ", " + ALL_G + ", " + ALL_B + ")";
 		    send('lrrg' + ALL_G );
-			sleep(100);
+			sleep(slp);
 			send('lrlg' + ALL_G );
-			sleep(100);
+			sleep(slp);
 			send('lfrg' + ALL_G );
-			sleep(100);
+			sleep(slp);
 			send('lflg' + ALL_G );
 			FRT_LH_G = ALL_G;
 			FRT_RH_G = ALL_G;
@@ -294,11 +295,11 @@ function listner_main () {
 		    ALL_B = this.value;
 		    color.style.background = 'rgb(' + ALL_R + ", " + ALL_G + ", " + ALL_B + ")";
 		    send('lrrb' + ALL_B );
-			sleep(100);
+			sleep(slp);
 			send('lrlb' + ALL_B );
-			sleep(100);
+			sleep(slp);
 			send('lfrb' + ALL_B );
-			sleep(100);
+			sleep(slp);
 			send('lflb' + ALL_B );
 			FRT_LH_B = ALL_B;
 			FRT_RH_B = ALL_B;
