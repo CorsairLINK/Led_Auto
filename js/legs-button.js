@@ -232,6 +232,23 @@ function listner_main () {
 		let color = document.getElementById('color');
 		let text = document.getElementById('text');
 		text.innerHTML = 'ALL';
+
+		FRT_LH_R = 0;
+		FRT_LH_G = 0;
+		FRT_LH_B = 0;
+
+		FRT_RH_R = 0;
+		FRT_RH_G = 0;
+		FRT_RH_B = 0;
+
+		RR_LH_R = 0;
+		RR_LH_G = 0;
+		RR_LH_B = 0;
+
+		RR_RH_R = 0;
+		RR_RH_G = 0;
+		RR_RH_B = 0;
+
 	    output_red.innerHTML = ALL_R;
 	    slider_red.value = ALL_R;
 	    output_green.innerHTML = ALL_G;
