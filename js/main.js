@@ -6,9 +6,6 @@ let inputField = document.getElementById('input');
 
 let temp = document.getElementById('temp');
 
-let buttonFRTLHRED = document.getElementById('buttonFRTLHRED');
-let buttonFRTLHBLUE = document.getElementById('buttonFRTLHBLUE');
-
 let deviceCache = null;
 let characteristicCache = null;
 let readBuffer = '';
