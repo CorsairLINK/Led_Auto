@@ -19,6 +19,11 @@ let ALL_G = 0;
 let ALL_B = 0;
 
 let slp = 25;
+
+const root = document.querySelector(':root');
+const rootStyles = getComputedStyle(root);
+const color = rootStyles.getPropertyValue('--text-color');
+
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -26,6 +31,7 @@ function button_back () {
 	let gear_button = document.getElementById('gear');
 	let text = document.getElementById('text');
 	gear_button.innerHTML = '<i class="fa fa-cog"></i>';
+
 	center.innerHTML = '';
 	center.innerHTML = '<!-- Фронт левый --><button id="button-FRT-LH" type="button-FRT-LH" class="button-center FRT LH"><div class="textButton">FRT LH</div></button><!-- Фронт правый --><button id="button-FRT-RH" type="button-FRT-LH" class="button-center FRT RH"><div class="textButton">FRT RH</div></button><!-- Тыл левый --><button id="button-RR-LH" type="button-FRT-LH" class="button-center RR LH"><div class="textButton">RR LH</div></button><!-- Тыл правый --><button id="button-RR-RH" type="button-FRT-LH" class="button-center RR RH"><div class="textButton">RR RH</div></button><!-- Все --><button id="button-ALL" type="button-ALL" class="button-center ALL"><div class="textButton2">ALL</div></button><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
 	text.innerHTML = 'Car Light';
@@ -306,6 +312,56 @@ function listner_main () {
 			RR_LH_B = ALL_B;
 			RR_RH_B = ALL_B;
 		}
+	});
+	gear_button.addEventListener('click', function(){
+		center.innerHTML = '';
+		center.innerHTML = '<!-- Кнопка настройки --><button id="color1" type="button" class="button color1"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color2" type="button" class="button color2"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color3" type="button" class="button color3"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color4" type="button" class="button color4"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color5" type="button" class="button color5"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color6" type="button" class="button color6"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color7" type="button" class="button color7"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color8" type="button" class="button color8"><i class="fa fa-cog"></i></button>';
+		gear_button.innerHTML = '<i class="fa fa-reply"></i>';
+		gear_button.addEventListener('click', function() {
+			button_back();
+		});
+		let color1 = document.getElementById('color1');
+		let color2 = document.getElementById('color2');
+		let color3 = document.getElementById('color3');
+		let color4 = document.getElementById('color4');
+		let color5 = document.getElementById('color5');
+		let color6 = document.getElementById('color6');
+		let color7 = document.getElementById('color7');
+		let color8 = document.getElementById('color8');
+		/* rgb(0, 179, 96) rgb(30, 150, 200) rgb(245, 91, 91) rgb(240, 91, 245) rgb(165, 70, 253) rgb(253, 137, 70) rgb(90, 239, 250) rgb(198, 201, 54)*/
+		color1.addEventListener('click', function () {
+			
+    		
+			root.style.setProperty('--text-color', 'rgb(0, 179, 96)');
+		});
+		color2.addEventListener('click', function () {
+			
+			root.style.setProperty('--text-color', 'rgb(30, 150, 200)');
+		});
+		color3.addEventListener('click', function () {
+			
+			root.style.setProperty('--text-color', 'rgb(245, 91, 91)');
+		});
+		color4.addEventListener('click', function () {
+			
+			root.style.setProperty('--text-color', 'rgb(240, 91, 245)');
+		});
+		color5.addEventListener('click', function () {
+			
+			root.style.setProperty('--text-color', 'rgb(165, 70, 253)');
+		});
+		color6.addEventListener('click', function () {
+			
+			root.style.setProperty('--text-color', 'rgb(253, 137, 70)');
+		});
+		color7.addEventListener('click', function () {
+			
+			root.style.setProperty('--text-color', 'rgb(90, 239, 250)');
+		});
+		color8.addEventListener('click', function () {
+			
+			root.style.setProperty('--text-color', 'rgb(198, 201, 54)');
+		});
 	});
 }
 
