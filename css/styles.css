@@ -64,15 +64,7 @@ body {
 	border-bottom: 3px solid;
 	border-bottom-color: rgba(0,0,0,0.2);
 }
-.bottom {
-	position: absolute;
-	border-top: 3px solid;
-	border-top-color: rgba(0,0,0,0.2);
-	box-shadow: -2px -2px 10px rgb(2, 18, 18);
-	height: 70px;
-	width: 314px;
-	bottom: 0px;
-}
+
 .button {
 	z-index: 2;
 	position: relative;
@@ -91,21 +83,7 @@ body {
 	text-shadow: 
 		0px 0px 15px rgba(0, 179, 96, 0.3);
 }
-.button-bottom {
-	z-index: 2;
-	position: relative;
-	
-	background: rgb(59, 75, 75);
-	
-	border: 10px solid;
-	border-color: var(--text-color);
-	border-width: 2px;
 
-	text-align: center;
-	color: rgba(0,0,0,0.4);
-	/*text-shadow: 
-		0px 0px 15px rgba(0, 179, 96, 0.3);*/
-}
 .connect {
 	position: absolute;
 	right: 68px;
@@ -206,67 +184,6 @@ body {
 	line-height: 4px;
 	color: 'rgba(0,0,0,0.4)';
 }
-/* BOTTOM */
-.legs {
-	position: absolute;
-	left: 20px;
-	top: 10px;
-
-	font-size: 34px;
-	line-height: 16px;
-
-	width: 50px;
-	height: 50px;
-
-	border-radius: 50%;
-}
-.panel {
-	position: absolute;
-	right: 95px;
-	top: 10px;
-
-	font-size: 32px;
-	text-align: center;
-	line-height: 16px;
-
-	width: 50px;
-	height: 50px;
-
-	border-radius: 50%;
-}
-.lenta {
-	position: absolute;
-	left: 95px;
-	top: 10px;
-
-	font-size: 34px;
-	line-height: 16px;
-
-	width: 50px;
-	height: 50px;
-
-	border-radius: 50%;
-}
-.temp {
-	position: absolute;
-	right: 20px;
-	top: 10px;
-
-	font-size: 34px;
-	line-height: 16px;
-
-	width: 50px;
-	height: 50px;
-
-	border-radius: 50%;
-}
-.fa-tachometer {
-	position: absolute;
-	bottom: 10px;
-	right: 7px;
-}
-
-
 
 /* 
 	background: radial-gradient(circle at center, rgba(35,186,0,1) 0%, rgba(9,121,54,1) 25%, rgba(2,0,36,1) 100%);

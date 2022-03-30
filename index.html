@@ -6,21 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Подключение файла стилей css -->
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/page-FRT-LH.css" rel="stylesheet">
+    <link href="css/bottom.css" rel="stylesheet">
+    <link href="css/page-legs.css" rel="stylesheet">
     <link href="css/color.css" rel="stylesheet">
     <!-- Название вкладки -->
-    <title>CarLight Mobile App</title>
+    <title>Car Light</title>
     <!-- Подключение иконочного шрифта Font Awesome -->
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <div class="wrapper">
-        <!-- Шапка сайта -->
+        <!-- Шапка -->
         <div class="top">
             <!-- Надпись -->
-            <div id="text" class="text">
-                Car Light
-            </div>
+            <div id="text" class="text">Car Light</div>
             <!-- Кнопка подключения -->
             <button id="connect" type="button" class="button connect">
                 <i class="fa fa-bluetooth-b"></i>
@@ -30,6 +29,7 @@
                 <i class="fa fa-cog"></i>
             </button>
         </div>
+        <!-- Центральная часть -->
         <div id="center" class="center">
             <!-- Фронт левый -->
             <button id="button-FRT-LH" type="button-FRT-LH" class="button-center FRT LH" href='frtLH'>
@@ -58,21 +58,22 @@
             <!-- Блок вывода информации -->
             <div id="terminal" class="terminal"></div>
         </div>
+        <!-- Нижняя часть -->
         <div class="bottom">
             <!-- Кнопка НОГИ -->
-            <button id="legs-button" type="button" class="button-bottom legs">
+            <button id="legs-button" class="button-bottom legs">
                 <i class="fa fa-hand-o-down"></i>
             </button>
             <!-- Кнопка ЛЕНТА -->
-            <button id="lenta-button" type="button" class="button-bottom lenta">
+            <button id="lenta-button" class="button-bottom lenta">
                 <i class="fa fa-yelp"></i>
             </button>
             <!-- Кнопка ПАНЕЛЬ -->
-            <button id="panel-button" type="button" class="button-bottom panel">
+            <button id="panel-button" class="button-bottom panel">
                 <i class="fa fa-tachometer"></i>
             </button>
             <!-- Кнопка ТЕМПЕРАТУРА -->
-            <button id="temp-button" type="button" class="button-bottom temp">
+            <button id="temp-button" class="button-bottom temp">
                 <i class="fa fa-thermometer-empty"></i>
             </button>
         </div>

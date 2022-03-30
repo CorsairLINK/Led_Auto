@@ -6,7 +6,7 @@ let temp_button = document.getElementById('temp-button');
 
 // Нижние кнопки
 legs_button.addEventListener('click', function(){
-    legs_button.style.color = 'rgb(0, 179, 96)';
+    legs_button.style.color = 'var(--text-color)';
     lenta_button.style.color = 'rgba(0,0,0,0.4)';
     panel_button.style.color = 'rgba(0,0,0,0.4)';
     temp_button.style.color = 'rgba(0,0,0,0.4)';
@@ -14,7 +14,7 @@ legs_button.addEventListener('click', function(){
 });
 lenta_button.addEventListener('click', function(){
     legs_button.style.color = 'rgba(0,0,0,0.4)';
-    lenta_button.style.color = 'rgb(0, 179, 96)';
+    lenta_button.style.color = 'var(--text-color)';
     panel_button.style.color = 'rgba(0,0,0,0.4)';
     temp_button.style.color = 'rgba(0,0,0,0.4)';
 
@@ -22,7 +22,7 @@ lenta_button.addEventListener('click', function(){
 panel_button.addEventListener('click', function(){
     legs_button.style.color = 'rgba(0,0,0,0.4)';
     lenta_button.style.color = 'rgba(0,0,0,0.4)';
-    panel_button.style.color = 'rgb(0, 179, 96)';
+    panel_button.style.color = 'var(--text-color)';
     temp_button.style.color = 'rgba(0,0,0,0.4)';
 
 });
@@ -30,7 +30,7 @@ temp_button.addEventListener('click', function(){
     legs_button.style.color = 'rgba(0,0,0,0.4)';
     lenta_button.style.color = 'rgba(0,0,0,0.4)';
     panel_button.style.color = 'rgba(0,0,0,0.4)';
-    temp_button.style.color = 'rgb(0, 179, 96)';
+    temp_button.style.color = 'var(--text-color)';
 
 });
 
