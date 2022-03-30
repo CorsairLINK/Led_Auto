@@ -21,7 +21,7 @@
     height: 40px;
 	border-radius: 50%;
 	border: 2px solid;
-	border-color: rgb(0, 179, 96);
+	border-color: var(--text-color);
     background: rgb(59, 75, 75);
 	box-shadow: 1px 2px 2px rgba(0,0,0,0.5);
     cursor: pointer;
@@ -41,41 +41,17 @@
 	top: 70px;
 	background: rgba(0,0,255,0.3);
 }
-.rangevalue-red {
+.rangevalue {
     font-size: 22px;
 	font-weight: bold;
     top: 40px;
     left: 240px;
     position: relative;
 
-	color: rgb(0, 179, 96);
+	color: var(--text-color);
 
 	text-shadow: 
-		0px 0px 15px rgba(35,186,90,0.3);
-}
-.rangevalue-green {
-    font-size: 22px;
-	font-weight: bold;
-    top: 40px;
-    left: 240px;
-    position: relative;
-
-	color: rgb(0, 179, 96);
-
-	text-shadow: 
-		0px 0px 15px rgba(35,186,90,0.3);
-}
-.rangevalue-blue {
-    font-size: 22px;
-	font-weight: bold;
-    top: 40px;
-    left: 240px;
-    position: relative;
-	
-	color: rgb(0, 179, 96);
-
-	text-shadow: 
-		0px 0px 5px rgba(35,186,90,0.3);
+		0px 0px 3px var(--text-color);
 }
 .color {
 	position: absolute;
