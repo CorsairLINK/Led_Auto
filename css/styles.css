@@ -190,6 +190,22 @@ body {
 	right: 117px;
 	top: 230px;
 }
+.DIN {
+	position: absolute;
+	right: 40px;
+	top: 230px;
+	width: 48px;
+}
+.textButton3 {
+	position: absolute;
+	text-align: center;
+	left: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	
+	line-height: 4px;
+	color: 'rgba(0,0,0,0.4)';
+}
 /* BOTTOM */
 .legs {
 	position: absolute;

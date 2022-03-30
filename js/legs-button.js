@@ -33,7 +33,7 @@ function button_back () {
 	gear_button.innerHTML = '<i class="fa fa-cog"></i>';
 
 	center.innerHTML = '';
-	center.innerHTML = '<!-- Фронт левый --><button id="button-FRT-LH" type="button-FRT-LH" class="button-center FRT LH"><div class="textButton">FRT LH</div></button><!-- Фронт правый --><button id="button-FRT-RH" type="button-FRT-LH" class="button-center FRT RH"><div class="textButton">FRT RH</div></button><!-- Тыл левый --><button id="button-RR-LH" type="button-FRT-LH" class="button-center RR LH"><div class="textButton">RR LH</div></button><!-- Тыл правый --><button id="button-RR-RH" type="button-FRT-LH" class="button-center RR RH"><div class="textButton">RR RH</div></button><!-- Все --><button id="button-ALL" type="button-ALL" class="button-center ALL"><div class="textButton2">ALL</div></button><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
+	center.innerHTML = '<!-- Фронт левый --><button id="button-FRT-LH" type="button-FRT-LH" class="button-center FRT LH"><div class="textButton">FRT LH</div></button><!-- Фронт правый --><button id="button-FRT-RH" type="button-FRT-LH" class="button-center FRT RH"><div class="textButton">FRT RH</div></button><!-- Тыл левый --><button id="button-RR-LH" type="button-FRT-LH" class="button-center RR LH"><div class="textButton">RR LH</div></button><!-- Тыл правый --><button id="button-RR-RH" type="button-FRT-LH" class="button-center RR RH"><div class="textButton">RR RH</div></button><!-- Все --><button id="button-ALL" type="button-ALL" class="button-center ALL"><div class="textButton2">ALL</div></button><!-- Режим --><button id="button-DIN" type="button-DIN" class="button-center DIN"><div class="textButton3">din</div></button><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
 	text.innerHTML = 'Car Light';
 	listner_main();
 }
@@ -45,6 +45,7 @@ function listner_main () {
 	let gear_button = document.getElementById('gear');
 	let button_ALL = document.getElementById('button-ALL');
 	let text = document.getElementById('text');
+	let button_DIN = document.getElementById('button-DIN');
 
 	button_FRT_LH.addEventListener('click', function(){
 	    center.innerHTML = '';
@@ -330,8 +331,6 @@ function listner_main () {
 		let color8 = document.getElementById('color8');
 		/* rgb(0, 179, 96) rgb(30, 150, 200) rgb(245, 91, 91) rgb(240, 91, 245) rgb(165, 70, 253) rgb(253, 137, 70) rgb(90, 239, 250) rgb(198, 201, 54)*/
 		color1.addEventListener('click', function () {
-			
-    		
 			root.style.setProperty('--text-color', 'rgb(0, 179, 96)');
 		});
 		color2.addEventListener('click', function () {
@@ -362,6 +361,10 @@ function listner_main () {
 			
 			root.style.setProperty('--text-color', 'rgb(198, 201, 54)');
 		});
+	});
+	button_DIN.addEventListener('click', function(){
+		button_DIN.style.color = 'red';
+		send('f');
 	});
 }
 
