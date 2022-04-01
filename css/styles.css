@@ -167,12 +167,15 @@ body {
 	position: absolute;
 	right: 117px;
 	top: 230px;
+	color: var(--text-color);
 }
 .DIN {
 	position: absolute;
 	right: 40px;
 	top: 230px;
 	width: 48px;
+	color: rgba(0,0,0,0.4);
+	
 }
 .textButton3 {
 	position: absolute;

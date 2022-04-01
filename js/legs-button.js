@@ -18,7 +18,8 @@ let ALL_R = 0;
 let ALL_G = 0;
 let ALL_B = 0;
 
-let slp = 25;
+let slp = 20;
+let flag_din = 0;
 
 const root = document.querySelector(':root');
 const rootStyles = getComputedStyle(root);
@@ -34,6 +35,7 @@ function button_back () {
 
 	center.innerHTML = '';
 	center.innerHTML = '<!-- Фронт левый --><button id="button-FRT-LH" type="button-FRT-LH" class="button-center FRT LH"><div class="textButton">FRT LH</div></button><!-- Фронт правый --><button id="button-FRT-RH" type="button-FRT-LH" class="button-center FRT RH"><div class="textButton">FRT RH</div></button><!-- Тыл левый --><button id="button-RR-LH" type="button-FRT-LH" class="button-center RR LH"><div class="textButton">RR LH</div></button><!-- Тыл правый --><button id="button-RR-RH" type="button-FRT-LH" class="button-center RR RH"><div class="textButton">RR RH</div></button><!-- Все --><button id="button-ALL" type="button-ALL" class="button-center ALL"><div class="textButton2">ALL</div></button><!-- Режим --><button id="button-DIN" type="button-DIN" class="button-center DIN"><div class="textButton3">din</div></button><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
+
 	text.innerHTML = 'Car Light';
 	listner_main();
 }
@@ -363,8 +365,19 @@ function listner_main () {
 		});
 	});
 	button_DIN.addEventListener('click', function(){
-		button_DIN.style.color = 'red';
-		send('f');
+		if (flag_din === 1) {
+			button_DIN.style.color = 'rgba(0,0,0,0.4)';
+			button_DIN.innerHTML = 'off';
+			send('nofnd');
+			flag_din = 0;
+			
+		}
+		else if (flag_din === 0) {
+			button_DIN.style.color = 'red';
+			button_DIN.innerHTML = 'on';
+			send('fnd');
+			flag_din = 1;
+		}
 	});
 }
 
