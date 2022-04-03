@@ -34,8 +34,7 @@ function button_back () {
 	gear_button.innerHTML = '<i class="fa fa-cog"></i>';
 
 	center.innerHTML = '';
-	center.innerHTML = '<!-- Фронт левый --><button id="button-FRT-LH" type="button-FRT-LH" class="button-center FRT LH"><div class="textButton">FRT LH</div></button><!-- Фронт правый --><button id="button-FRT-RH" type="button-FRT-LH" class="button-center FRT RH"><div class="textButton">FRT RH</div></button><!-- Тыл левый --><button id="button-RR-LH" type="button-FRT-LH" class="button-center RR LH"><div class="textButton">RR LH</div></button><!-- Тыл правый --><button id="button-RR-RH" type="button-FRT-LH" class="button-center RR RH"><div class="textButton">RR RH</div></button><!-- Все --><button id="button-ALL" type="button-ALL" class="button-center ALL"><div class="textButton2">ALL</div></button><!-- Режим --><button id="button-DIN" type="button-DIN" class="button-center DIN"><div class="textButton3">din</div></button><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
-
+	center.innerHTML = '<!-- Фронт левый --><button id="button-FRT-LH" type="button-FRT-LH" class="button-center FRT LH"><div class="textButton">FRT LH</div></button><!-- Фронт правый --><button id="button-FRT-RH" type="button-FRT-LH" class="button-center FRT RH"><div class="textButton">FRT RH</div></button><!-- Тыл левый --><button id="button-RR-LH" type="button-FRT-LH" class="button-center RR LH"><div class="textButton">RR LH</div></button><!-- Тыл правый --><button id="button-RR-RH" type="button-FRT-LH" class="button-center RR RH"><div class="textButton">RR RH</div></button><!-- Все --><button id="button-ALL" type="button-ALL" class="button-center ALL"><div class="textButton2">ALL</div></button><!-- Режим --><button id="button-DIN" type="button-DIN" class="button-center DIN"><div class="textButton3">din</div></button>';
 	text.innerHTML = 'Car Light';
 	listner_main();
 }
@@ -51,7 +50,7 @@ function listner_main () {
 
 	button_FRT_LH.addEventListener('click', function(){
 	    center.innerHTML = '';
-	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{FRT_LH_R}" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{FRT_LH_G}" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{FRT_LH_B}" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
+	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{FRT_LH_R}" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{FRT_LH_G}" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{FRT_LH_B}" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div>';
 	    gear_button.innerHTML = '<i class="fa fa-reply"></i>';
 
 	    gear_button.addEventListener('click', function(){
@@ -79,24 +78,27 @@ function listner_main () {
 	    output_red.innerHTML = this.value;
 	    FRT_LH_R = this.value;
 	    color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-	    send('lrlr' + FRT_LH_R );
+	    log('out: lflr' + FRT_LH_R );
+		send('lflr' + FRT_LH_R );
 	    }
 	    slider_green.oninput = function() {
 	    output_green.innerHTML = this.value;
 	    FRT_LH_G = this.value;
 	    color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-	    send('lrlg' + FRT_LH_G );
+	    log('out: lflg' + FRT_LH_G );
+		send('lflg' + FRT_LH_G );
 	    }
 	    slider_blue.oninput = function() {
 	    output_blue.innerHTML = this.value;
 	    FRT_LH_B = this.value;
 	    color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-	    send('lrlb' + FRT_LH_B );
+	    log('out: lflb' + FRT_LH_B );
+		send('lflb' + FRT_LH_B );
 	    }
 	});
 	button_FRT_RH.addEventListener('click', function(){
 	    center.innerHTML = '';
-	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="0" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="0" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="0" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
+	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="0" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="0" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="0" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div>';
 	    gear_button.innerHTML = '<i class="fa fa-reply"></i>';
 
 	    gear_button.addEventListener('click', function(){
@@ -125,24 +127,27 @@ function listner_main () {
 		    output_red.innerHTML = this.value;
 		    FRT_RH_R = this.value;
 		    color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
-		    send('lrrr' + FRT_RH_R );
+		    log('out: lfrr' + FRT_RH_R );
+			send('lfrr' + FRT_RH_R );
 		}
 		slider_green.oninput = function() {
 		    output_green.innerHTML = this.value;
 		    FRT_RH_G = this.value;
 		    color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
-		    send('lrrg' + FRT_RH_G );
+		    log('out: lfrg' + FRT_RH_G );
+			send('lfrg' + FRT_RH_G );
 		}
 		slider_blue.oninput = function() {
 		    output_blue.innerHTML = this.value;
 		    FRT_RH_B = this.value;
 		    color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
-		    send('lrrb' + FRT_RH_B );
+		    log('out: lfrb' + FRT_RH_B );
+			send('lfrb' + FRT_RH_B );
 		}
 	});	
 	button_RR_LH.addEventListener('click', function(){
 	    center.innerHTML = '';
-	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_LH_R}" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_LH_G}" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_LH_B}" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
+	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_LH_R}" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_LH_G}" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_LH_B}" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div>';
 	    gear_button.innerHTML = '<i class="fa fa-reply"></i>';
 	    gear_button.addEventListener('click', function(){
 	    	button_back();
@@ -168,24 +173,27 @@ function listner_main () {
 		    output_red.innerHTML = this.value;
 		    RR_LH_R = this.value;
 		    color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-		    send('lrrr' + RR_LH_R );
+		    log('out: lrlr' + RR_LH_R);
+			send('lrrr' + RR_LH_R );
 		}
 		slider_green.oninput = function() {
 		    output_green.innerHTML = this.value;
 		    RR_LH_G = this.value;
 		    color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-		    send('lrrg' + RR_LH_G );
+		    log('out: lrlg' + RR_LH_G);
+			send('lrrg' + RR_LH_G );
 		}
 		slider_blue.oninput = function() {
 		    output_blue.innerHTML = this.value;
 		    RR_LH_B = this.value;
 		    color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-		    send('lrrb' + RR_LH_B );
+		    log('out: lrlb' + RR_LH_B);
+			send('lrrb' + RR_LH_B );
 		}
 	});
 	button_RR_RH.addEventListener('click', function(){
 	    center.innerHTML = '';
-	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_RH_R}" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_RH_G}" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_RH_B}" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
+	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_RH_R}" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_RH_G}" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{RR_RH_B}" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div>';
 	    gear_button.innerHTML = '<i class="fa fa-reply"></i>';
 	    gear_button.addEventListener('click', function(){
 	    	button_back();
@@ -211,24 +219,27 @@ function listner_main () {
 		    output_red.innerHTML = this.value;
 		    RR_RH_R = this.value;
 		    color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
-		    send('lrrr' + RR_RH_R );
+		    log('out: lrrr' + RR_RH_R);
+			send('lrrr' + RR_RH_R );
 		}
 		slider_green.oninput = function() {
 		    output_green.innerHTML = this.value;
 		    RR_RH_G = this.value;
 		    color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
-		    send('lrrg' + RR_RH_G );
+		    log('out: lrrg' + RR_RH_G);
+			send('lrrg' + RR_RH_G );
 		}
 		slider_blue.oninput = function() {
 		    output_blue.innerHTML = this.value;
 		    RR_RH_B = this.value;
 		    color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
-		    send('lrrb' + RR_RH_B );
+		    log('out: lrrb' + RR_RH_B);
+			send('lrrb' + RR_RH_B );
 		}
 	});
 	button_ALL.addEventListener('click', function(){
 		center.innerHTML = '';
-	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{ALL_R}" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{ALL_G}" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{ALL_B}" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div><!-- Блок вывода информации --><div id="terminal" class="terminal"></div>';
+	    center.innerHTML = '<!-- Блок вывода цвета --><button style="background: transparent" id="color" type="color" class="color"></button><!-- Ползунок выбора КРАСНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{ALL_R}" class="slider slide-red" id="myRange-red"><output id="rangevalue-red" class="rangevalue">0</output></div><!-- Ползунок выбора ЗЕЛЕНОГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{ALL_G}" class="slider slide-green" id="myRange-green"><output id="rangevalue-green" class="rangevalue">0</output></div><!-- Ползунок выбора СИНЕГО цвета --><div class="slidecontainer"><input type="range" min="0" max="255" value="{ALL_B}" class="slider slide-blue" id="myRange-blue"><output id="rangevalue-blue" class="rangevalue">0</output></div>';
 	    gear_button.innerHTML = '<i class="fa fa-reply"></i>';
 	    gear_button.addEventListener('click', function(){
 	    	button_back();
@@ -242,23 +253,23 @@ function listner_main () {
 		let color = document.getElementById('color');
 		let text = document.getElementById('text');
 		text.innerHTML = 'ALL';
+		
+		FRT_LH_R = ALL_R;
+		FRT_LH_G = ALL_G;
+		FRT_LH_B = ALL_B;
 
-		FRT_LH_R = 0;
-		FRT_LH_G = 0;
-		FRT_LH_B = 0;
+		FRT_RH_R = ALL_R;
+		FRT_RH_G = ALL_G;
+		FRT_RH_B = ALL_B;
 
-		FRT_RH_R = 0;
-		FRT_RH_G = 0;
-		FRT_RH_B = 0;
+		RR_LH_R = ALL_R;
+		RR_LH_G = ALL_G;
+		RR_LH_B = ALL_B;
 
-		RR_LH_R = 0;
-		RR_LH_G = 0;
-		RR_LH_B = 0;
-
-		RR_RH_R = 0;
-		RR_RH_G = 0;
-		RR_RH_B = 0;
-
+		RR_RH_R = ALL_R;
+		RR_RH_G = ALL_G;
+		RR_RH_B = ALL_B;
+		
 	    output_red.innerHTML = ALL_R;
 	    slider_red.value = ALL_R;
 	    output_green.innerHTML = ALL_G;
@@ -271,13 +282,9 @@ function listner_main () {
 		    output_red.innerHTML = this.value;
 		    ALL_R = this.value;
 		    color.style.background = 'rgb(' + ALL_R + ", " + ALL_G + ", " + ALL_B + ")";
-		    send('lrrr' + ALL_R );
-			sleep(slp);
-			send('lrlr' + ALL_R );
-			sleep(slp);
-			send('lfrr' + ALL_R );
-			sleep(slp);
-			send('lflr' + ALL_R );
+			log('out: allr' + ALL_R);
+			send('allr' + ALL_R );
+			
 			FRT_LH_R = ALL_R;
 			FRT_RH_R = ALL_R;
 			RR_LH_R = ALL_R;
@@ -287,13 +294,9 @@ function listner_main () {
 		    output_green.innerHTML = this.value;
 		    ALL_G = this.value;
 		    color.style.background = 'rgb(' + ALL_R + ", " + ALL_G + ", " + ALL_B + ")";
-		    send('lrrg' + ALL_G );
-			sleep(slp);
-			send('lrlg' + ALL_G );
-			sleep(slp);
-			send('lfrg' + ALL_G );
-			sleep(slp);
-			send('lflg' + ALL_G );
+		    log('out: allg' + ALL_G);
+			send('allg' + ALL_G );
+
 			FRT_LH_G = ALL_G;
 			FRT_RH_G = ALL_G;
 			RR_LH_G = ALL_G;
@@ -303,13 +306,8 @@ function listner_main () {
 		    output_blue.innerHTML = this.value;
 		    ALL_B = this.value;
 		    color.style.background = 'rgb(' + ALL_R + ", " + ALL_G + ", " + ALL_B + ")";
-		    send('lrrb' + ALL_B );
-			sleep(slp);
-			send('lrlb' + ALL_B );
-			sleep(slp);
-			send('lfrb' + ALL_B );
-			sleep(slp);
-			send('lflb' + ALL_B );
+		    log('out: allb' + ALL_B);
+			send('allb' + ALL_B );
 			FRT_LH_B = ALL_B;
 			FRT_RH_B = ALL_B;
 			RR_LH_B = ALL_B;
@@ -318,7 +316,7 @@ function listner_main () {
 	});
 	gear_button.addEventListener('click', function(){
 		center.innerHTML = '';
-		center.innerHTML = '<!-- Кнопка настройки --><button id="color1" type="button" class="button color1"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color2" type="button" class="button color2"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color3" type="button" class="button color3"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color4" type="button" class="button color4"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color5" type="button" class="button color5"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color6" type="button" class="button color6"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color7" type="button" class="button color7"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color8" type="button" class="button color8"><i class="fa fa-cog"></i></button>';
+		center.innerHTML = '<!-- Кнопка настройки --><button id="color1" type="button" class="button color1"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color2" type="button" class="button color2"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color3" type="button" class="button color3"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color4" type="button" class="button color4"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color5" type="button" class="button color5"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color6" type="button" class="button color6"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color7" type="button" class="button color7"><i class="fa fa-cog"></i></button><!-- Кнопка настройки --><button id="color8" type="button" class="button color8"><i class="fa fa-cog"></i></button><!-- Блок вывода информации -->';
 		gear_button.innerHTML = '<i class="fa fa-reply"></i>';
 		gear_button.addEventListener('click', function() {
 			button_back();
@@ -368,13 +366,14 @@ function listner_main () {
 		if (flag_din === 1) {
 			button_DIN.style.color = 'rgba(0,0,0,0.4)';
 			button_DIN.innerHTML = 'off';
+			log('Dinamic OFF');
 			send('nofnd');
 			flag_din = 0;
-			
 		}
 		else if (flag_din === 0) {
 			button_DIN.style.color = 'red';
 			button_DIN.innerHTML = 'on';
+			log('Dinamic ON');
 			send('fnd');
 			flag_din = 1;
 		}

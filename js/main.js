@@ -1,8 +1,6 @@
 // Получение ссылок на элементы UI
 let connectButton = document.getElementById('connect');
 let terminalContainer = document.getElementById('terminal');
-let sendForm = document.getElementById('send-form');
-let inputField = document.getElementById('input');
 
 let temp = document.getElementById('temp');
 
@@ -12,7 +10,7 @@ let readBuffer = '';
 
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
-  connectButton.style.color = 'rgb(0, 179, 96)';
+  connectButton.style.color = 'var(--text-color)';
   connect();
 });
 
@@ -92,8 +90,11 @@ function receive(data) {
 }
 // Вывод в терминал
 function log(data, type = '') {
-  terminalContainer.insertAdjacentHTML('beforeend',
-      '<div' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>');
+  /*terminalContainer.insertAdjacentHTML('beforeend',
+      '<div' + (type ? ' class="' + type + '"' : '') + '>' + data + '</div>');*/
+  terminalContainer.style.color = 'rgb(255, 255, 255)';
+	terminalContainer.style.fontSize = '14px';
+  terminalContainer.innerHTML = data;
 }
 // Вывод полученого значения в temp
 function get_temp(data) {
