@@ -137,7 +137,6 @@ function send(data) {
   else {
     writeToCharacteristic(characteristicCache, data);
   }
-  log(data, 'out');
 }
 // Записать значение в характеристику
 function writeToCharacteristic(characteristic, data) {

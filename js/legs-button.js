@@ -254,6 +254,8 @@ function listner_main () {
 		let text = document.getElementById('text');
 		text.innerHTML = 'ALL';
 		
+		send('clear');
+		
 		FRT_LH_R = ALL_R;
 		FRT_LH_G = ALL_G;
 		FRT_LH_B = ALL_B;
