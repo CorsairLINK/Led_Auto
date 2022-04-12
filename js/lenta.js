@@ -28,21 +28,21 @@ function lenta_but () {
 	output_red.innerHTML = this.value;
 	LENTA_R = this.value;
     color.style.background = 'rgb(' + LENTA_R + ", " + LENTA_G + ", " + LENTA_B + ")";
-    log('out: lentr' + LENTA_R );
-	send('lentr' + LENTA_R );
+    log('out: lenr' + LENTA_R );
+	send('lenr' + LENTA_R );
     }
     slider_green.oninput = function() {
     output_green.innerHTML = this.value;
     LENTA_G = this.value;
     color.style.background = 'rgb(' + LENTA_R + ", " + LENTA_G + ", " + LENTA_B + ")";
-    log('out: lentg' + LENTA_G );
-	send('lentg' + LENTA_G );
+    log('out: leng' + LENTA_G );
+	send('leng' + LENTA_G );
     }
     slider_blue.oninput = function() {
     output_blue.innerHTML = this.value;
     LENTA_B = this.value;
     color.style.background = 'rgb(' + LENTA_R + ", " + LENTA_G + ", " + LENTA_B + ")";
-    log('out: lentb' + LENTA_B );
-	send('lentb' + LENTA_B );
+    log('out: lenb' + LENTA_B );
+	send('lenb' + LENTA_B );
     }
 }
