@@ -11,6 +11,7 @@ let readBuffer = '';
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
   connectButton.style.color = 'var(--text-color)';
+  connectButton.style.textShadow = '0px 0px 3px rgb(2, 50, 207), 0px 0px 10px rgb(0, 60, 255), 0px 0px 15px rgb(70, 113, 255)';
   connect();
 });
 
