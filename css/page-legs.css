@@ -69,3 +69,16 @@
 	border-color: white;
 	border-radius: 8px;
 }
+.reset {
+	border-style: solid;
+	border-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 280px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: 22px;
+}

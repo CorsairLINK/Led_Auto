@@ -1,13 +1,44 @@
 // Получение ссылок на элементы UI
-let connectButton = document.getElementById('connect');
-let terminalContainer = document.getElementById('terminal');
-
-let temp = document.getElementById('temp');
+let connectButton = document.getElementById('connect'); // Кнопка ПОДКЛЮЧЕНИЯ
+let terminalContainer = document.getElementById('terminal'); // Окно отображения комманд
+let text = document.getElementById('text'); // Текст в шапке приложения
+let gear_button = document.getElementById('gear'); // Кнопка НАСТРОЙКИ и НАЗАД
+let center = document.getElementById('center'); // Центральная часть
 
 let deviceCache = null;
 let characteristicCache = null;
 let readBuffer = '';
 
+let FRT_LH_R = 0;
+let FRT_LH_G = 0;
+let FRT_LH_B = 0;
+
+let FRT_RH_R = 0;
+let FRT_RH_G = 0;
+let FRT_RH_B = 0;
+
+let RR_LH_R = 0;
+let RR_LH_G = 0;
+let RR_LH_B = 0;
+
+let RR_RH_R = 0;
+let RR_RH_G = 0;
+let RR_RH_B = 0;
+
+let ALL_R = 0;
+let ALL_G = 0;
+let ALL_B = 0;
+
+let page_number = 0;
+/*  0 - Основная страница (ноги)
+    1 - Страница с лентой
+    2 - Страница с панелью
+    3 - Страница с температурой
+    4 - Страница с настройкой 
+*/
+function sleep(ms) {
+	return new Promise(resolve => setTimeout(resolve, ms));
+}
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
   connectButton.style.color = 'var(--text-color)';
@@ -87,7 +118,7 @@ function handleCharacteristicValueChanged(event) {
 }
 // Обработка полученных данных log(data, 'in');
 function receive(data) {
-  get_temp(data);
+  none
 }
 // Вывод в терминал
 function log(data, type = '') {
@@ -97,10 +128,10 @@ function log(data, type = '') {
 	terminalContainer.style.fontSize = '14px';
   terminalContainer.innerHTML = data;
 }
-// Вывод полученого значения в temp
+/* Вывод полученого значения в temp
 function get_temp(data) {
   temp.innerHTML = String(data);
-}
+} */
 // Отключиться от подключенного устройства
 function disconnect() {
   if (deviceCache) {
