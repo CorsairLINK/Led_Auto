@@ -54,11 +54,8 @@ function listner_main () {
 			slider_blue.value = FRT_LH_B;
 			color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
 			send('lflr' + FRT_LH_R );
-			sleep(20);
-			send('lflg' + FRT_LH_G );
-			sleep(20);
-			send('lflb' + FRT_LH_B );
-			sleep(20);
+			setTimeout(() => {  send('lflg' + FRT_LH_G ); }, 50);
+			setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 50);
 			log('reset color');
 		});
 		
@@ -121,11 +118,8 @@ function listner_main () {
 			slider_blue.value = FRT_RH_B;
 			color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
 			send('lfrr' + FRT_RH_R );
-			sleep(20);
-			send('lfrg' + FRT_RH_G );
-			sleep(20);
-			send('lfrb' + FRT_RH_B );
-			sleep(20);
+			setTimeout(() => {  send('lfrg' + FRT_RH_G ); }, 50);
+			setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 50);
 			log('reset color');
 		});
 
@@ -188,11 +182,8 @@ function listner_main () {
 			slider_blue.value = RR_LH_B;
 			color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
 			send('lrlr' + RR_LH_R );
-			sleep(20);
-			send('lrlg' + RR_LH_G );
-			sleep(20);
-			send('lrlb' + RR_LH_B );
-			sleep(20);
+			setTimeout(() => {  send('lrlg' + RR_LH_G ); }, 50);
+			setTimeout(() => {  send('lrlb' + RR_LH_B ); }, 50);
 			log('reset color');
 		});
 		
@@ -255,11 +246,8 @@ function listner_main () {
 			slider_blue.value = RR_RH_B;
 			color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
 			send('lrrr' + RR_RH_R );
-			sleep(20);
-			send('lrrg' + RR_RH_G );
-			sleep(20);
-			send('lrrb' + RR_RH_B );
-			sleep(20);
+			setTimeout(() => {  send('lrrg' + RR_RH_G ); }, 50);
+			setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 50);
 			log('reset color');
 		});
 		
@@ -321,11 +309,8 @@ function listner_main () {
 			slider_blue.value = ALL_B;
 			color.style.background = 'rgb(' + ALL_R + ", " + ALL_G + ", " + ALL_B + ")";
 			send('allr' + ALL_R );
-			sleep(20);
-			send('allg' + ALL_G );
-			sleep(20);
-			send('allb' + ALL_B );
-			sleep(20);
+			setTimeout(() => {  send('allg' + ALL_G ); }, 50);
+			setTimeout(() => {  send('allb' + ALL_B ); }, 50);
 			log('reset color');
 		});
 		
@@ -394,14 +379,14 @@ function listner_main () {
 			button_DIN.style.color = 'rgba(0,0,0,0.4)';
 			button_DIN.innerHTML = 'off';
 			log('Dinamic OFF');
-			send('nofnd');
+			send('dinf');
 			flag_din = 0;
 		}
 		else if (flag_din === 0) {
 			button_DIN.style.color = 'red';
 			button_DIN.innerHTML = 'on';
 			log('Dinamic ON');
-			send('fnd');
+			send('dino');
 			flag_din = 1;
 		}
 	});
