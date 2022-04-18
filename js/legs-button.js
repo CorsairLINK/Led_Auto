@@ -1,4 +1,3 @@
-let slp = 20;
 let flag_din = 0;
 
 
@@ -54,8 +53,8 @@ function listner_main () {
 			slider_blue.value = FRT_LH_B;
 			color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
 			send('lflr' + FRT_LH_R );
-			setTimeout(() => {  send('lflg' + FRT_LH_G ); }, 50);
-			setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 50);
+			setTimeout(() => {  send('lflg' + FRT_LH_G ); }, 25);
+			setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 25);
 			log('reset color');
 		});
 		
@@ -119,7 +118,7 @@ function listner_main () {
 			color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
 			send('lfrr' + FRT_RH_R );
 			setTimeout(() => {  send('lfrg' + FRT_RH_G ); }, 50);
-			setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 50);
+			setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 75);
 			log('reset color');
 		});
 
@@ -182,7 +181,7 @@ function listner_main () {
 			slider_blue.value = RR_LH_B;
 			color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
 			send('lrlr' + RR_LH_R );
-			setTimeout(() => {  send('lrlg' + RR_LH_G ); }, 50);
+			setTimeout(() => {  send('lrlg' + RR_LH_G ); }, 75);
 			setTimeout(() => {  send('lrlb' + RR_LH_B ); }, 50);
 			log('reset color');
 		});
@@ -247,7 +246,7 @@ function listner_main () {
 			color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
 			send('lrrr' + RR_RH_R );
 			setTimeout(() => {  send('lrrg' + RR_RH_G ); }, 50);
-			setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 50);
+			setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 100);
 			log('reset color');
 		});
 		

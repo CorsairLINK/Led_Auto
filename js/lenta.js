@@ -32,8 +32,8 @@ function lenta_but () {
         slider_blue.value = LENTA_B;
         color.style.background = 'rgb(' + LENTA_R + ", " + LENTA_G + ", " + LENTA_B + ")";
         send('lenr' + LENTA_R );
-        setTimeout(() => {  send('leng' + LENTA_G ); }, 50);
-		setTimeout(() => {  send('lenb' + LENTA_B ); }, 50);
+        setTimeout(() => {  send('leng' + LENTA_G ); }, 100);
+		setTimeout(() => {  send('lenb' + LENTA_B ); }, 100);
         log('reset color');
     });
 
