@@ -163,7 +163,7 @@ function send(data) {
     for (let i = 1; i < chunks.length; i++) {
       setTimeout(() => {
         writeToCharacteristic(characteristicCache, chunks[i]);
-      }, i * 100);
+      }, i * 50);
     }
   }
   else {
