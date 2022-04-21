@@ -52,9 +52,9 @@ function listner_main () {
 			output_blue.innerHTML = FRT_LH_B;
 			slider_blue.value = FRT_LH_B;
 			color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-			send('lflr' + FRT_LH_R );
-			setTimeout(() => {  send('lflg' + FRT_LH_G ); }, 75);
-			setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 75);
+			send('lflc');
+			/*setTimeout(() => {  send('lflg' + FRT_LH_G ); }, 75);
+			setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 75);*/
 			log('reset color');
 		});
 		
@@ -116,9 +116,9 @@ function listner_main () {
 			output_blue.innerHTML = FRT_RH_B;
 			slider_blue.value = FRT_RH_B;
 			color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
-			send('lfrr' + FRT_RH_R );
-			setTimeout(() => {  send('lfrg' + FRT_RH_G ); }, 75);
-			setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 75);
+			send('lfrc');
+			/*setTimeout(() => {  send('lfrg' + FRT_RH_G ); }, 75);
+			setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 75);*/
 			log('reset color');
 		});
 
@@ -180,9 +180,9 @@ function listner_main () {
 			output_blue.innerHTML = RR_LH_B;
 			slider_blue.value = RR_LH_B;
 			color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-			send('lrlr' + RR_LH_R );
-			setTimeout(() => {  send('lrlg' + RR_LH_G ); }, 75);
-			setTimeout(() => {  send('lrlb' + RR_LH_B ); }, 75);
+			send('lrlc');
+			/*setTimeout(() => {  send('lrlg' + RR_LH_G ); }, 75);
+			setTimeout(() => {  send('lrlb' + RR_LH_B ); }, 75);*/
 			log('reset color');
 		});
 		
@@ -244,9 +244,9 @@ function listner_main () {
 			output_blue.innerHTML = RR_RH_B;
 			slider_blue.value = RR_RH_B;
 			color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
-			send('lrrr' + RR_RH_R );
-			setTimeout(() => {  send('lrrg' + RR_RH_G ); }, 75);
-			setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 75);
+			send('lrrc');
+			/*setTimeout(() => {  send('lrrg' + RR_RH_G ); }, 60);
+			setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 60);*/
 			log('reset color');
 		});
 		
@@ -307,9 +307,9 @@ function listner_main () {
 			output_blue.innerHTML = ALL_B;
 			slider_blue.value = ALL_B;
 			color.style.background = 'rgb(' + ALL_R + ", " + ALL_G + ", " + ALL_B + ")";
-			send('allr' + ALL_R );
-			setTimeout(() => {  send('allg' + ALL_G ); }, 75);
-			setTimeout(() => {  send('allb' + ALL_B ); }, 75);
+			send('allc');
+			/*setTimeout(() => {  send('allg' + ALL_G ); }, 60);
+			setTimeout(() => {  send('allb' + ALL_B ); }, 60);*/
 			log('reset color');
 		});
 		

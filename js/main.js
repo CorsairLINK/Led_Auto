@@ -36,9 +36,6 @@ let page_number = 0;
     3 - Страница с температурой
     4 - Страница с настройкой 
 */
-function sleep(ms) {
-	return new Promise(resolve => setTimeout(resolve, ms));
-}
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
   connectButton.style.color = 'var(--text-color)';
