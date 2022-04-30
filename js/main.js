@@ -36,6 +36,9 @@ let page_number = 0;
     3 - Страница с температурой
     4 - Страница с настройкой 
 */
+
+/* Переменные ячеек сохранения */
+let saves1 = [0,0,0, 0,0,0, 0,0,0, 0,0,0, 0,0,0]; /* Первая ячейка сохранения */
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
   connectButton.style.color = 'var(--text-color)';
@@ -115,7 +118,28 @@ function handleCharacteristicValueChanged(event) {
 }
 // Обработка полученных данных log(data, 'in');
 function receive(data) {
-  none
+  if (data[0] === 's') {
+    if (data[1] === '1') {
+      if (data[2] === '1') {
+        if (data[3] === 'r') {
+          saves1[0] = data[4];
+          saves1[0] += data[5];
+          saves1[0] += data[6];
+        }
+        if (data[2] === 'g') {
+          saves1[1] = data[4];
+          saves1[1] += data[5];
+          saves1[1] += data[6];
+        }
+        if (data[2] === 'b') {
+          saves1[2] = data[4];
+          saves1[2] += data[5];
+          saves1[2] += data[6];
+        }
+      }
+      
+    }
+  }
 }
 // Вывод в терминал
 function log(data, type = '') {

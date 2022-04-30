@@ -62,7 +62,7 @@
 	text-shadow: none;
 }
 /* Расположение кнопки ТЕМПЕРАТУРА */
-.temp {
+.saves {
 	position: absolute;
 	right: 20px;
 	top: 10px;

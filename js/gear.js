@@ -11,6 +11,9 @@ function gear () {
         if (page_number === 1) {
             lenta_but();
         }
+        if (page_number === 3) {
+            saves_but();
+        }
     });
     let color1 = document.getElementById('color1');
     let color2 = document.getElementById('color2');

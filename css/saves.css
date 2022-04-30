@@ -1,0 +1,150 @@
+.button-center2 {
+	display: inline;
+	position: inline;
+	width: 40px;
+	height: 40px;
+
+	background: #383838;
+	box-shadow: -1px -1px 5px rgba(252,255,255,0.2),
+		1px 1px 2px rgba(0,0,0,0.8);		
+	border: solid;
+	border-color: rgba(0,0,0,0.2);
+	border-width: 3px;
+	border-radius: 10px;
+	background: transparent;
+}
+.saves1 {
+	position: absolute;
+	top: 85px;
+    left: 15px;
+}
+.saves2 {
+	position: absolute;
+	top: 130px;
+    left: 15px;
+}
+.saves3 {
+	position: absolute;
+	top: 175px;
+    left: 15px;
+}
+.saves4 {
+	position: absolute;
+	top: 220px;
+    left: 15px;
+}
+.saves5 {
+	position: absolute;
+	top: 265px;
+    left: 15px;
+}
+
+.saves1-load {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+	font-size: 18px;
+	
+	line-height: 4px;
+	color: rgba(0,0,0,0.4);
+	top: 85px;
+    left: 260px;
+}
+.saves2-load {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+	font-size: 18px;
+	
+	line-height: 4px;
+	color: rgba(0,0,0,0.4);
+	top: 130px;
+    left: 260px;
+}
+.saves3-load {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+	font-size: 18px;
+	
+	line-height: 4px;
+	color: rgba(0,0,0,0.4);
+	top: 175px;
+    left: 260px;
+}
+.saves4-load {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+	font-size: 18px;
+	
+	line-height: 4px;
+	color: rgba(0,0,0,0.4);
+	top: 220px;
+    left: 260px;
+}
+.saves5-load {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+	font-size: 18px;
+	
+	line-height: 4px;
+	color: rgba(0,0,0,0.4);
+	top: 265px;
+    left: 260px;
+}
+
+.button-center3 {
+	display: inline;
+	position: inline;
+	width: 30px;
+	height: 35px;
+	
+	border: solid;
+	border-color: rgba(255,255,255);
+	border-width: 3px;
+	border-radius: 3px;
+	background: transparent;
+}
+.saves1color {
+    position: absolute;
+	top: 85px;
+}
+.saves2color {
+    position: absolute;
+	top: 130px;
+}
+.saves3color {
+    position: absolute;
+	top: 175px;
+}
+.saves4color {
+    position: absolute;
+	top: 220px;
+}
+.saves5color {
+    position: absolute;
+	top: 265px;
+}
+
+.savescolor1 {
+    position: absolute;
+	left: 60px;
+}
+.savescolor2 {
+    position: absolute;
+	left: 100px;
+}
+.savescolor3 {
+    position: absolute;
+	left: 140px;
+}
+.savescolor4 {
+    position: absolute;
+	left: 180px;
+}
+.savescolor5 {
+    position: absolute;
+	left: 220px;
+}
