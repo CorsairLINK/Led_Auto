@@ -67,7 +67,8 @@ function requestBluetoothDevice() {
       then(device => {
         log('"' + device.name + '" bluetooth device selected');
         deviceCache = device;
-        send('sav');
+        send('saves');
+        log('saves');
         deviceCache.addEventListener('gattserverdisconnected',
             handleDisconnection);
         return deviceCache;
@@ -123,10 +124,14 @@ function handleCharacteristicValueChanged(event) {
 }
 // Обработка полученных данных log(data, 'in');
 function receive(data) {
+  log('saves 2');
   if (data[0] === 's') {
+    log('saves 3');
     if (data[1] === '1') {
+      log('saves 4');
       /* Сектор 1 */
       if (data[2] === '1') {
+        log('saves 5');
         if (data[3] === 'r') {
           saves1[0] = data[4];
           saves1[0] += data[5];
