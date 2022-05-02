@@ -58,22 +58,7 @@ function connect() {
       then(characteristic => startNotifications(characteristic)).
       catch(error => log(error));
 }
-// Запрос выбора Bluetooth устройства
-function requestBluetoothDevice() {
-  log('Requesting bluetooth device...'); 
-  return navigator.bluetooth.requestDevice({
-    filters: [{services: [0xFFE0]}],
-  }).
-      then(device => {
-        log('"' + device.name + '" bluetooth device selected');
-        deviceCache = device;
-        send('saves');
-        log('saves');
-        deviceCache.addEventListener('gattserverdisconnected',
-            handleDisconnection);
-        return deviceCache;
-      });
-}
+
 // Обработчик разъединения
 function handleDisconnection(event) {
   let device = event.target;
@@ -307,7 +292,22 @@ function send(data) {
 function writeToCharacteristic(characteristic, data) {
   characteristic.writeValue(new TextEncoder().encode(data));
 }
-
+// Запрос выбора Bluetooth устройства
+function requestBluetoothDevice() {
+  log('Requesting bluetooth device...'); 
+  return navigator.bluetooth.requestDevice({
+    filters: [{services: [0xFFE0]}],
+  }).
+      then(device => {
+        log('"' + device.name + '" bluetooth device selected');
+        deviceCache = device;
+        send('saves');
+        log('saves');
+        deviceCache.addEventListener('gattserverdisconnected',
+            handleDisconnection);
+        return deviceCache;
+      });
+}
 function clearData(data) {
   for (let i = 0; i < 20; i++) {
     data[i] = 0;
