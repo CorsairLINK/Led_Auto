@@ -123,25 +123,25 @@ function handleCharacteristicValueChanged(event) {
 }
 // Обработка полученных данных log(data, 'in');
 function receive(data) {
-  if (String(data[0]) === 's') {
-    if (String(data[1]) === '1') {
+  if (data[0] === 's') {
+    if (data[1] === '1') {
       /* Сектор 1 */
-      if (String(data[2]) === '1') {
-        if (String(data[3]) === 'r') {
+      if (data[2] === '1') {
+        if (data[3] === 'r') {
           saves1[0] = data[4];
           saves1[0] += data[5];
           saves1[0] += data[6];
           clearData(data);
           log('saves11 red load 1%');
         }
-        if (String(data[3]) === 'g') {
+        if (data[3] === 'g') {
           saves1[1] = data[4];
           saves1[1] += data[5];
           saves1[1] += data[6];
           clearData(data);
           log('saves11 green load 2%');
         }
-        if (String(data[3]) === 'b') {
+        if (data[3] === 'b') {
           saves1[2] = data[4];
           saves1[2] += data[5];
           saves1[2] += data[6];
