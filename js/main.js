@@ -38,7 +38,11 @@ let page_number = 0;
 */
 
 /* Переменные ячеек сохранения */
-let saves1 = [0,0,0, 0,0,0, 0,0,0, 0,0,0, 0,0,0]; /* Первая ячейка сохранения */
+let saves1 = [0,0,0, 0,0,0, 0,0,0, 0,0,0, 0,0,0]; /* 1 ячейка сохранения */
+let saves2 = [0,0,0, 0,0,0, 0,0,0, 0,0,0, 0,0,0]; /* 2 ячейка сохранения */
+let saves3 = [0,0,0, 0,0,0, 0,0,0, 0,0,0, 0,0,0]; /* 3 ячейка сохранения */
+let saves4 = [0,0,0, 0,0,0, 0,0,0, 0,0,0, 0,0,0]; /* 4 ячейка сохранения */
+let saves5 = [0,0,0, 0,0,0, 0,0,0, 0,0,0, 0,0,0]; /* 5 ячейка сохранения */
 // Подключение к устройству при нажатии на кнопку Connect
 connectButton.addEventListener('click', function() {
   connectButton.style.color = 'var(--text-color)';
@@ -63,6 +67,7 @@ function requestBluetoothDevice() {
       then(device => {
         log('"' + device.name + '" bluetooth device selected');
         deviceCache = device;
+        send('sav');
         deviceCache.addEventListener('gattserverdisconnected',
             handleDisconnection);
         return deviceCache;
@@ -118,26 +123,128 @@ function handleCharacteristicValueChanged(event) {
 }
 // Обработка полученных данных log(data, 'in');
 function receive(data) {
-  if (data[0] === 's') {
-    if (data[1] === '1') {
-      if (data[2] === '1') {
-        if (data[3] === 'r') {
+  if (String(data[0]) === 's') {
+    if (String(data[1]) === '1') {
+      /* Сектор 1 */
+      if (String(data[2]) === '1') {
+        if (String(data[3]) === 'r') {
           saves1[0] = data[4];
           saves1[0] += data[5];
           saves1[0] += data[6];
+          clearData(data);
+          log('saves11 red load 1%');
         }
-        if (data[2] === 'g') {
+        if (String(data[3]) === 'g') {
           saves1[1] = data[4];
           saves1[1] += data[5];
           saves1[1] += data[6];
+          clearData(data);
+          log('saves11 green load 2%');
         }
-        if (data[2] === 'b') {
+        if (String(data[3]) === 'b') {
           saves1[2] = data[4];
           saves1[2] += data[5];
           saves1[2] += data[6];
+          clearData(data);
+          log('saves11 blue load 3%');
         }
       }
-      
+      /* Сектор 2 */
+      if (String(data[2]) === '2') {
+        if (String(data[3]) === 'r') {
+          saves1[3] = data[4];
+          saves1[3] += data[5];
+          saves1[3] += data[6];
+          clearData(data);
+          log('saves12 red load 4%');
+        }
+        if (String(data[3]) === 'g') {
+          saves1[4] = data[4];
+          saves1[4] += data[5];
+          saves1[4] += data[6];
+          clearData(data);
+          log('saves12 green load 5%');
+        }
+        if (String(data[3]) === 'b') {
+          saves1[5] = data[4];
+          saves1[5] += data[5];
+          saves1[5] += data[6];
+          clearData(data);
+          log('saves12 blue load 6%');
+        }
+      }
+      /* Сектор 3 */
+      if (String(data[2]) === '3') {
+        if (String(data[3]) === 'r') {
+          saves1[6] = data[4];
+          saves1[6] += data[5];
+          saves1[6] += data[6];
+          clearData(data);
+          log('saves13 red load 7%');
+        }
+        if (String(data[3]) === 'g') {
+          saves1[7] = data[4];
+          saves1[7] += data[5];
+          saves1[7] += data[6];
+          clearData(data);
+          log('saves13 green load 8%');
+        }
+        if (String(data[3]) === 'b') {
+          saves1[8] = data[4];
+          saves1[8] += data[5];
+          saves1[8] += data[6];
+          clearData(data);
+          log('saves13 blue load 9%');
+        }
+      }
+      /* Сектор 4 */
+      if (String(data[2]) === '4') {
+        if (String(data[3]) === 'r') {
+          saves1[9] = data[4];
+          saves1[9] += data[5];
+          saves1[9] += data[6];
+          clearData(data);
+          log('saves14 red load 10%');
+        }
+        if (String(data[3]) === 'g') {
+          saves1[10] = data[4];
+          saves1[10] += data[5];
+          saves1[10] += data[6];
+          clearData(data);
+          log('saves14 green load 11%');
+        }
+        if (String(data[3]) === 'b') {
+          saves1[11] = data[4];
+          saves1[11] += data[5];
+          saves1[11] += data[6];
+          clearData(data);
+          log('saves14 blue load 12%');
+        }
+      }
+      /* Сектор 5 */
+      if (String(data[2]) === '5') {
+        if (String(data[3]) === 'r') {
+          saves1[12] = data[4];
+          saves1[12] += data[5];
+          saves1[12] += data[6];
+          clearData(data);
+          log('saves15 red load 13%');
+        }
+        if (String(data[3]) === 'g') {
+          saves1[13] = data[4];
+          saves1[13] += data[5];
+          saves1[13] += data[6];
+          clearData(data);
+          log('saves15 green load 14%');
+        }
+        if (String(data[3]) === 'b') {
+          saves1[14] = data[4];
+          saves1[14] += data[5];
+          saves1[14] += data[6];
+          clearData(data);
+          log('saves15 blue load 15%');
+        }
+      }
     }
   }
 }
@@ -196,5 +303,10 @@ function writeToCharacteristic(characteristic, data) {
   characteristic.writeValue(new TextEncoder().encode(data));
 }
 
+function clearData(data) {
+  for (let i = 0; i < 20; i++) {
+    data[i] = 0;
+  }
+}
 
 // rgb(0, 179, 96)  rgba(0,0,0,0.4)

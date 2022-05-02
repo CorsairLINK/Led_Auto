@@ -52,22 +52,71 @@ function saves_but () {
     let saves5_color4 = document.getElementById('saves5-color4');
     let saves5_color5 = document.getElementById('saves5-color5');
 
-    send('saves');
+    /*send('saves');
     saves1_color1.style.background = 'rgb(' + saves1[0] + ", " + saves1[1] + ", " + saves1[2] + ")";
-	log('Saves1_color1 set');
+	log('Saves1_color1 set');*/
 
     button_saves1.addEventListener('click', function() {
+        /* 1 сектор */
         saves1[0] = FRT_LH_R;
         send('loa11r' + FRT_LH_R);
-        log('Saves1 load 5%');
+        log('Saves1 load 1%');
         saves1[1] = FRT_LH_G;
         setTimeout(() => {  send('loa11g' + FRT_LH_G); }, 70);
-        log('Saves1 load 10%');
+        log('Saves1 load 2%');
         saves1[2] = FRT_LH_B;
         setTimeout(() => {  send('loa11b' + FRT_LH_B); }, 70);
-        log('Saves1 load 15%');
+        log('Saves1 load 3%');
         saves1_color1.style.background = 'rgb(' + saves1[0] + ", " + saves1[1] + ", " + saves1[2] + ")";
-        log('Saves1 load 100% !!!');
+        log('Saves1 load 4%');
+        /* 2 сектор */
+        saves1[3] = FRT_RH_R;
+        send('loa12r' + FRT_RH_R);
+        log('Saves1 load 5%');
+        saves1[4] = FRT_RH_G;
+        setTimeout(() => {  send('loa12g' + FRT_RH_G); }, 70);
+        log('Saves1 load 6%');
+        saves1[5] = FRT_RH_B;
+        setTimeout(() => {  send('loa12b' + FRT_RH_B); }, 70);
+        log('Saves1 load 7%');
+        saves1_color2.style.background = 'rgb(' + saves1[3] + ", " + saves1[4] + ", " + saves1[5] + ")";
+        log('Saves1 load 8%');
+        /* 3 сектор */
+        saves1[6] = RR_LH_R;
+        send('loa13r' + RR_LH_R);
+        log('Saves1 load 9%');
+        saves1[7] = RR_LH_G;
+        setTimeout(() => {  send('loa13g' + RR_LH_G); }, 70);
+        log('Saves1 load 10%');
+        saves1[8] = RR_LH_B;
+        setTimeout(() => {  send('loa13b' + RR_LH_B); }, 70);
+        log('Saves1 load 11%');
+        saves1_color3.style.background = 'rgb(' + saves1[6] + ", " + saves1[7] + ", " + saves1[8] + ")";
+        log('Saves1 load 12%');
+        /* 4 сектор */
+        saves1[9] = RR_RH_R;
+        send('loa14r' + RR_RH_R);
+        log('Saves1 load 13%');
+        saves1[10] = RR_RH_G;
+        setTimeout(() => {  send('loa14g' + RR_RH_G); }, 70);
+        log('Saves1 load 14%');
+        saves1[11] = RR_RH_B;
+        setTimeout(() => {  send('loa14b' + RR_RH_B); }, 70);
+        log('Saves1 load 15%');
+        saves1_color4.style.background = 'rgb(' + saves1[9] + ", " + saves1[10] + ", " + saves1[11] + ")";
+        log('Saves1 load 16%');
+        /* 5 сектор */
+        saves1[12] = LENTA_R;
+        send('loa15r' + LENTA_R);
+        log('Saves1 load 17%');
+        saves1[13] = LENTA_G;
+        setTimeout(() => {  send('loa15g' + LENTA_G); }, 70);
+        log('Saves1 load 18%');
+        saves1[14] = LENTA_B;
+        setTimeout(() => {  send('loa15b' + LENTA_B); }, 70);
+        log('Saves1 load 19%');
+        saves1_color5.style.background = 'rgb(' + saves1[12] + ", " + saves1[13] + ", " + saves1[14] + ")";
+        log('Saves1 load 20%');
     });
     
     button_saves1_load.addEventListener('click', function() {
