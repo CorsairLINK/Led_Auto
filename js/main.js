@@ -118,33 +118,29 @@ function receive(data) {
 }
 
 function arrData(data) {
-  log('saves 2');
   if (data[0] === 's') {
-    log('saves 3');
     if (data[1] === '1') {
-      log('saves 4');
       /* Сектор 1 */
       if (data[2] === '1') {
-        log('saves 5');
         if (data[3] === 'r') {
           saves1[0] = data[4];
           saves1[0] += data[5];
           saves1[0] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves11 red load 1%');
         }
         if (data[3] === 'g') {
           saves1[1] = data[4];
           saves1[1] += data[5];
           saves1[1] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves11 green load 2%');
         }
         if (data[3] === 'b') {
           saves1[2] = data[4];
           saves1[2] += data[5];
           saves1[2] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves11 blue load 3%');
         }
       }
