@@ -67,7 +67,7 @@ function saves_but () {
     button_saves1.addEventListener('click', function() {
         /* 1 сектор */
         saves1[0] = FRT_LH_R;
-        setTimeout(() => {  send('loa11r' + FRT_LH_R); }, 100);
+        send('loa11r' + FRT_LH_R);
         log('Saves1 load 1%');
         saves1[1] = FRT_LH_G;
         setTimeout(() => {  send('loa11g' + FRT_LH_G); }, 100);
