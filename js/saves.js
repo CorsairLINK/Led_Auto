@@ -67,13 +67,13 @@ function saves_but () {
     button_saves1.addEventListener('click', function() {
         /* 1 сектор */
         saves1[0] = FRT_LH_R;
-        send('loa11r' + FRT_LH_R);
+        setTimeout(() => {  send('loa11r' + FRT_LH_R); }, 100);
         log('Saves1 load 1%');
         saves1[1] = FRT_LH_G;
-        send('loa11g' + FRT_LH_G);
+        setTimeout(() => {  send('loa11g' + FRT_LH_G); }, 200);
         log('Saves1 load 2%');
         saves1[2] = FRT_LH_B;
-        send('loa11b' + FRT_LH_B);
+        setTimeout(() => {  send('loa11b' + FRT_LH_B); }, 300);
         log('Saves1 load 3%');
         saves1_color1.style.background = 'rgb(' + saves1[0] + ", " + saves1[1] + ", " + saves1[2] + ")";
         log('Saves1 load 4%');
@@ -94,7 +94,7 @@ function saves_but () {
         send('loa13r' + RR_LH_R);
         log('Saves1 load 9%');
         saves1[7] = RR_LH_G;
-        setTimeout(() => {  send('loa13g' + RR_LH_G); }, 200);
+        setTimeout(() => {  send('loa13g' + RR_LH_G); }, 70);
         log('Saves1 load 10%');
         saves1[8] = RR_LH_B;
         setTimeout(() => {  send('loa13b' + RR_LH_B); }, 70);
