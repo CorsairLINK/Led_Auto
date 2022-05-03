@@ -107,6 +107,11 @@ function handleCharacteristicValueChanged(event) {
     }
   }
 }
+function clearData(data) {
+  for (let i = 0; i < 20; i++) {
+    data[i] = 0;
+  }
+}
 // Обработка полученных данных log(data, 'in');
 function receive(data) {
   log('saves 2');
@@ -301,17 +306,13 @@ function requestBluetoothDevice() {
       then(device => {
         log('"' + device.name + '" bluetooth device selected');
         deviceCache = device;
-        send('saves');
+        send('sav');
         log('saves');
         deviceCache.addEventListener('gattserverdisconnected',
             handleDisconnection);
         return deviceCache;
       });
 }
-function clearData(data) {
-  for (let i = 0; i < 20; i++) {
-    data[i] = 0;
-  }
-}
+
 
 // rgb(0, 179, 96)  rgba(0,0,0,0.4)
