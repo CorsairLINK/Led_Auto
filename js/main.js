@@ -175,21 +175,21 @@ function arrData(data) {
           saves1[6] += data[5];
           saves1[6] += data[6];
           /*clearData(data);*/
-          log('saves13 red load 7%');
+          log('saves13 red load 7% - ' + data);
         }
         if (data[3] === 'g') {
           saves1[7] = data[4];
           saves1[7] += data[5];
           saves1[7] += data[6];
           /*clearData(data);*/
-          log('saves13 green load 8%');
+          log('saves13 green load 8% - ' + data);
         }
         if (data[3] === 'b') {
           saves1[8] = data[4];
           saves1[8] += data[5];
           saves1[8] += data[6];
           /*clearData(data);*/
-          log('saves13 blue load 9%');
+          log('saves13 blue load 9% - ' + data);
         }
       }
       /* Сектор 4 */
@@ -199,21 +199,21 @@ function arrData(data) {
           saves1[9] += data[5];
           saves1[9] += data[6];
           /*clearData(data);*/
-          log('saves14 red load 10%');
+          log('saves14 red load 10% - ' + data);
         }
         if (data[3] === 'g') {
           saves1[10] = data[4];
           saves1[10] += data[5];
           saves1[10] += data[6];
           /*clearData(data);*/
-          log('saves14 green load 11%');
+          log('saves14 green load 11% - ' + data);
         }
         if (data[3] === 'b') {
           saves1[11] = data[4];
           saves1[11] += data[5];
           saves1[11] += data[6];
           /*clearData(data);*/
-          log('saves14 blue load 12%');
+          log('saves14 blue load 12% - ' + data);
         }
       }
       /* Сектор 5 */
@@ -223,21 +223,26 @@ function arrData(data) {
           saves1[12] += data[5];
           saves1[12] += data[6];
           /*clearData(data);*/
-          log('saves15 red load 13%');
+          log('saves15 red load 13% - ' + data);
         }
         if (data[3] === 'g') {
           saves1[13] = data[4];
           saves1[13] += data[5];
           saves1[13] += data[6];
           /*clearData(data);*/
-          log('saves15 green load 14%');
+          log('saves15 green load 14% - ' + data);
         }
         if (data[3] === 'b') {
           saves1[14] = data[4];
           saves1[14] += data[5];
           saves1[14] += data[6];
           /*clearData(data);*/
-          log('saves15 blue load 15%');
+          log('saves15 blue load 15% - ' + data);
+          saves1_color1.style.background = 'rgb(' + saves1[0] + ", " + saves1[1] + ", " + saves1[2] + ")";
+          saves1_color2.style.background = 'rgb(' + saves1[3] + ", " + saves1[4] + ", " + saves1[5] + ")";
+          saves1_color3.style.background = 'rgb(' + saves1[6] + ", " + saves1[7] + ", " + saves1[8] + ")";
+          saves1_color4.style.background = 'rgb(' + saves1[9] + ", " + saves1[10] + ", " + saves1[11] + ")";
+          saves1_color5.style.background = 'rgb(' + saves1[12] + ", " + saves1[13] + ", " + saves1[14] + ")";
         }
       }
     }
