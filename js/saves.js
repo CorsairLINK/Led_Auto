@@ -70,10 +70,10 @@ function saves_but () {
         send('loa11r' + FRT_LH_R);
         log('Saves1 load 1%');
         saves1[1] = FRT_LH_G;
-        setTimeout(() => {  send('loa11g' + FRT_LH_G); }, 70);
+        send('loa11g' + FRT_LH_G);
         log('Saves1 load 2%');
         saves1[2] = FRT_LH_B;
-        setTimeout(() => {  send('loa11b' + FRT_LH_B); }, 70);
+        send('loa11b' + FRT_LH_B);
         log('Saves1 load 3%');
         saves1_color1.style.background = 'rgb(' + saves1[0] + ", " + saves1[1] + ", " + saves1[2] + ")";
         log('Saves1 load 4%');
@@ -82,10 +82,10 @@ function saves_but () {
         send('loa12r' + FRT_RH_R);
         log('Saves1 load 5%');
         saves1[4] = FRT_RH_G;
-        setTimeout(() => {  send('loa12g' + FRT_RH_G); }, 70);
+        send('loa12g' + FRT_RH_G);
         log('Saves1 load 6%');
         saves1[5] = FRT_RH_B;
-        setTimeout(() => {  send('loa12b' + FRT_RH_B); }, 70);
+        send('loa12b' + FRT_RH_B);
         log('Saves1 load 7%');
         saves1_color2.style.background = 'rgb(' + saves1[3] + ", " + saves1[4] + ", " + saves1[5] + ")";
         log('Saves1 load 8%');
@@ -94,7 +94,7 @@ function saves_but () {
         send('loa13r' + RR_LH_R);
         log('Saves1 load 9%');
         saves1[7] = RR_LH_G;
-        setTimeout(() => {  send('loa13g' + RR_LH_G); }, 70);
+        setTimeout(() => {  send('loa13g' + RR_LH_G); }, 200);
         log('Saves1 load 10%');
         saves1[8] = RR_LH_B;
         setTimeout(() => {  send('loa13b' + RR_LH_B); }, 70);
