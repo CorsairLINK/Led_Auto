@@ -49,7 +49,6 @@ connectButton.addEventListener('click', function() {
   connectButton.style.textShadow = 'var(--color1)';
   connect();
 });
-
 // Запустить выбор Bluetooth устройства и подключиться к выбранному
 function connect() {
   return (deviceCache ? Promise.resolve(deviceCache) :
@@ -58,7 +57,6 @@ function connect() {
       then(characteristic => startNotifications(characteristic)).
       catch(error => log(error));
 }
-
 // Обработчик разъединения
 function handleDisconnection(event) {
   let device = event.target;
@@ -94,7 +92,7 @@ function startNotifications(characteristic) {
 // Получение данных
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
-	log('1 - ' + value);
+  log('1 - ' + value);
   for (let c of value) {
     if (c === '\n') {
       let data = readBuffer.trim();
@@ -102,7 +100,7 @@ function handleCharacteristicValueChanged(event) {
       if (data) {
         receive(data);
       }
-	    log('111');
+      log('11111');
     }
     else {
       readBuffer += c;
@@ -308,8 +306,6 @@ function requestBluetoothDevice() {
       then(device => {
         log('"' + device.name + '" bluetooth device selected');
         deviceCache = device;
-        send('sav');
-        log('saves');
         deviceCache.addEventListener('gattserverdisconnected',
             handleDisconnection);
         return deviceCache;

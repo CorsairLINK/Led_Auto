@@ -1,5 +1,7 @@
 
 function saves_but () {
+    send('sav');
+    log('saves');
     text.innerHTML = 'Saves';
     page_number = 3; // Номер страницы (Сохраненные - 3)
 
