@@ -73,13 +73,13 @@ function saves_but () {
         setTimeout(() => {  send('loa11g' + FRT_LH_G); }, 100);
         log('Saves1 load 2%');
         saves1[2] = FRT_LH_B;
-        setTimeout(() => {  send('loa11b' + FRT_LH_B); }, 100);
+        send('loa11b' + FRT_LH_B);
         log('Saves1 load 3%');
         saves1_color1.style.background = 'rgb(' + saves1[0] + ", " + saves1[1] + ", " + saves1[2] + ")";
         log('Saves1 load 4%');
         /* 2 сектор */
         saves1[3] = FRT_RH_R;
-        /*send('loa12r' + FRT_RH_R);*/
+        setTimeout(() => {  send('loa12r' + FRT_RH_R); }, 100);
         log('Saves1 load 5%');
         saves1[4] = FRT_RH_G;
         /*send('loa12g' + FRT_RH_G);*/
