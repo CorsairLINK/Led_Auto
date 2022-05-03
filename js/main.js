@@ -93,7 +93,7 @@ function startNotifications(characteristic) {
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
   arrData(value);
-  log('arrData STARTED: ' + value);
+  /*log('arrData STARTED: ' + value);*/
   for (let c of value) {
     if (c === '\n') {
       let data = readBuffer.trim();
