@@ -101,6 +101,7 @@ function handleCharacteristicValueChanged(event) {
       if (data) {
         receive(data);
       }
+	    log('111');
     }
     else {
       readBuffer += c;
