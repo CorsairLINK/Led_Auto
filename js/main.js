@@ -92,7 +92,8 @@ function startNotifications(characteristic) {
 // Получение данных
 function handleCharacteristicValueChanged(event) {
   let value = new TextDecoder().decode(event.target.value);
-  log('1 - ' + value);
+  arrData(value);
+  log('arrData STARTED: ' + value);
   for (let c of value) {
     if (c === '\n') {
       let data = readBuffer.trim();
@@ -100,7 +101,6 @@ function handleCharacteristicValueChanged(event) {
       if (data) {
         receive(data);
       }
-      log('11111');
     }
     else {
       readBuffer += c;
@@ -114,6 +114,10 @@ function clearData(data) {
 }
 // Обработка полученных данных log(data, 'in');
 function receive(data) {
+  none
+}
+
+function arrData(data) {
   log('saves 2');
   if (data[0] === 's') {
     log('saves 3');
