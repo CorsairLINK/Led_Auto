@@ -126,7 +126,7 @@ function arrData(data) {
           saves1[0] = data[4];
           saves1[0] += data[5];
           saves1[0] += data[6];
-          /*clearData(data);*/
+          clearData(data);
           log('saves11 red load 1%');
         }
         if (data[3] === 'g') {
