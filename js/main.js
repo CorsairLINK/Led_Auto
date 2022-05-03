@@ -127,21 +127,21 @@ function arrData(data) {
           saves1[0] += data[5];
           saves1[0] += data[6];
           /*clearData(data);*/
-          log('saves11 red load 1%');
+          log('saves11 red load 1% - ' + data);
         }
         if (data[3] === 'g') {
           saves1[1] = data[4];
           saves1[1] += data[5];
           saves1[1] += data[6];
           /*clearData(data);*/
-          log('saves11 green load 2%');
+          log('saves11 green load 2% - ' + data);
         }
         if (data[3] === 'b') {
           saves1[2] = data[4];
           saves1[2] += data[5];
           saves1[2] += data[6];
           /*clearData(data);*/
-          log('saves11 blue load 3%');
+          log('saves11 blue load 3% - ' + data);
         }
       }
       /* Сектор 2 */
@@ -151,92 +151,92 @@ function arrData(data) {
           saves1[3] += data[5];
           saves1[3] += data[6];
           /*clearData(data);*/
-          log('saves12 red load 4%');
+          log('saves12 red load 4% - ' + data);
         }
         if (data[3] === 'g') {
           saves1[4] = data[4];
           saves1[4] += data[5];
           saves1[4] += data[6];
           /*clearData(data);*/
-          log('saves12 green load 5%');
+          log('saves12 green load 5% - ' + data);
         }
         if (data[3] === 'b') {
           saves1[5] = data[4];
           saves1[5] += data[5];
           saves1[5] += data[6];
           /*clearData(data);*/
-          log('saves12 blue load 6%');
+          log('saves12 blue load 6% - ' + data);
         }
       }
       /* Сектор 3 */
-      if (String(data[2]) === '3') {
-        if (String(data[3]) === 'r') {
+      if (data[2] === '3') {
+        if (data[3] === 'r') {
           saves1[6] = data[4];
           saves1[6] += data[5];
           saves1[6] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves13 red load 7%');
         }
-        if (String(data[3]) === 'g') {
+        if (data[3] === 'g') {
           saves1[7] = data[4];
           saves1[7] += data[5];
           saves1[7] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves13 green load 8%');
         }
-        if (String(data[3]) === 'b') {
+        if (data[3] === 'b') {
           saves1[8] = data[4];
           saves1[8] += data[5];
           saves1[8] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves13 blue load 9%');
         }
       }
       /* Сектор 4 */
-      if (String(data[2]) === '4') {
-        if (String(data[3]) === 'r') {
+      if (data[2] === '4') {
+        if (data[3] === 'r') {
           saves1[9] = data[4];
           saves1[9] += data[5];
           saves1[9] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves14 red load 10%');
         }
-        if (String(data[3]) === 'g') {
+        if (data[3] === 'g') {
           saves1[10] = data[4];
           saves1[10] += data[5];
           saves1[10] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves14 green load 11%');
         }
-        if (String(data[3]) === 'b') {
+        if (data[3] === 'b') {
           saves1[11] = data[4];
           saves1[11] += data[5];
           saves1[11] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves14 blue load 12%');
         }
       }
       /* Сектор 5 */
-      if (String(data[2]) === '5') {
-        if (String(data[3]) === 'r') {
+      if (data[2] === '5') {
+        if (data[3] === 'r') {
           saves1[12] = data[4];
           saves1[12] += data[5];
           saves1[12] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves15 red load 13%');
         }
-        if (String(data[3]) === 'g') {
+        if (data[3] === 'g') {
           saves1[13] = data[4];
           saves1[13] += data[5];
           saves1[13] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves15 green load 14%');
         }
-        if (String(data[3]) === 'b') {
+        if (data[3] === 'b') {
           saves1[14] = data[4];
           saves1[14] += data[5];
           saves1[14] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves15 blue load 15%');
         }
       }
