@@ -126,7 +126,7 @@ function arrData(data) {
           saves1[0] = data[4];
           saves1[0] += data[5];
           saves1[0] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves11 red load 1%');
         }
         if (data[3] === 'g') {
@@ -145,26 +145,26 @@ function arrData(data) {
         }
       }
       /* Сектор 2 */
-      if (String(data[2]) === '2') {
-        if (String(data[3]) === 'r') {
+      if (data[2] === '2') {
+        if (data[3] === 'r') {
           saves1[3] = data[4];
           saves1[3] += data[5];
           saves1[3] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves12 red load 4%');
         }
-        if (String(data[3]) === 'g') {
+        if (data[3] === 'g') {
           saves1[4] = data[4];
           saves1[4] += data[5];
           saves1[4] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves12 green load 5%');
         }
-        if (String(data[3]) === 'b') {
+        if (data[3] === 'b') {
           saves1[5] = data[4];
           saves1[5] += data[5];
           saves1[5] += data[6];
-          clearData(data);
+          /*clearData(data);*/
           log('saves12 blue load 6%');
         }
       }
