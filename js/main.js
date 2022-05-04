@@ -567,7 +567,7 @@ function arrData(data) {
       }
     }
     // Ячейка сохранения 5
-    if (data[1] === '4') {
+    if (data[1] === '5') {
       /* Сектор 1 */
       if (data[2] === '1') {
         if (data[3] === 'r') {
