@@ -277,7 +277,7 @@ function saves_but () {
         FRT_LH_B = saves2[2];
         setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 450);
         log('Saves2 set 3%');
-        saves1_color1.style.background = 'rgb(' + saves2[0] + ", " + saves2[1] + ", " + saves2[2] + ")";
+        saves2_color1.style.background = 'rgb(' + saves2[0] + ", " + saves2[1] + ", " + saves2[2] + ")";
         FRT_RH_R = saves2[3];
         setTimeout(() => {  send('lfrr' + FRT_RH_R ); }, 600);
         log('Saves2 set 4%');
@@ -287,7 +287,7 @@ function saves_but () {
         FRT_RH_B = saves2[5];
         setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 900);
         log('Saves2 set 6%');
-        saves1_color2.style.background = 'rgb(' + saves2[3] + ", " + saves2[4] + ", " + saves2[5] + ")";
+        saves2_color2.style.background = 'rgb(' + saves2[3] + ", " + saves2[4] + ", " + saves2[5] + ")";
         RR_LH_R = saves2[6];
         setTimeout(() => {  send('lrlr' + RR_LH_R ); }, 1050);
         log('Saves2 set 7%');
@@ -297,7 +297,7 @@ function saves_but () {
         RR_LH_B = saves2[8];
         setTimeout(() => {  send('lrlb' + RR_LH_B ); }, 1350);
         log('Saves2 set 9%');
-        saves1_color3.style.background = 'rgb(' + saves2[6] + ", " + saves2[7] + ", " + saves2[8] + ")";
+        saves2_color3.style.background = 'rgb(' + saves2[6] + ", " + saves2[7] + ", " + saves2[8] + ")";
         RR_RH_R = saves2[9];
         setTimeout(() => {  send('lrrr' + RR_RH_R ); }, 1500);
         log('Saves2 set 10%');
@@ -307,7 +307,7 @@ function saves_but () {
         RR_RH_B = saves2[11];
         setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 1800);
         log('Saves2 set 12%');
-        saves1_color4.style.background = 'rgb(' + saves2[9] + ", " + saves2[10] + ", " + saves2[11] + ")";
+        saves2_color4.style.background = 'rgb(' + saves2[9] + ", " + saves2[10] + ", " + saves2[11] + ")";
         LENTA_R = saves2[12];
         setTimeout(() => {  send('lenr' + LENTA_R ); }, 1950);
         log('Saves2 set 13%');
@@ -317,7 +317,7 @@ function saves_but () {
         LENTA_B = saves2[14];
         setTimeout(() => {  send('lenb' + LENTA_B ); }, 2250);
         log('Saves2 set 15% !!!');
-        saves1_color5.style.background = 'rgb(' + saves2[12] + ", " + saves2[13] + ", " + saves2[14] + ")";
+        saves2_color5.style.background = 'rgb(' + saves2[12] + ", " + saves2[13] + ", " + saves2[14] + ")";
     });
 
     button_saves3.addEventListener('click', function() {
@@ -393,7 +393,7 @@ function saves_but () {
         FRT_LH_B = saves3[2];
         setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 450);
         log('Saves3 set 3%');
-        saves1_color1.style.background = 'rgb(' + saves3[0] + ", " + saves3[1] + ", " + saves3[2] + ")";
+        saves3_color1.style.background = 'rgb(' + saves3[0] + ", " + saves3[1] + ", " + saves3[2] + ")";
         FRT_RH_R = saves3[3];
         setTimeout(() => {  send('lfrr' + FRT_RH_R ); }, 600);
         log('Saves3 set 4%');
@@ -403,7 +403,7 @@ function saves_but () {
         FRT_RH_B = saves3[5];
         setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 900);
         log('Saves3 set 6%');
-        saves1_color2.style.background = 'rgb(' + saves3[3] + ", " + saves3[4] + ", " + saves3[5] + ")";
+        saves3_color2.style.background = 'rgb(' + saves3[3] + ", " + saves3[4] + ", " + saves3[5] + ")";
         RR_LH_R = saves3[6];
         setTimeout(() => {  send('lrlr' + RR_LH_R ); }, 1050);
         log('Saves3 set 7%');
@@ -413,7 +413,7 @@ function saves_but () {
         RR_LH_B = saves3[8];
         setTimeout(() => {  send('lrlb' + RR_LH_B ); }, 1350);
         log('Saves3 set 9%');
-        saves1_color3.style.background = 'rgb(' + saves3[6] + ", " + saves3[7] + ", " + saves3[8] + ")";
+        saves3_color3.style.background = 'rgb(' + saves3[6] + ", " + saves3[7] + ", " + saves3[8] + ")";
         RR_RH_R = saves3[9];
         setTimeout(() => {  send('lrrr' + RR_RH_R ); }, 1500);
         log('Saves3 set 10%');
@@ -423,7 +423,7 @@ function saves_but () {
         RR_RH_B = saves3[11];
         setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 1800);
         log('Saves3 set 12%');
-        saves1_color4.style.background = 'rgb(' + saves3[9] + ", " + saves3[10] + ", " + saves3[11] + ")";
+        saves3_color4.style.background = 'rgb(' + saves3[9] + ", " + saves3[10] + ", " + saves3[11] + ")";
         LENTA_R = saves3[12];
         setTimeout(() => {  send('lenr' + LENTA_R ); }, 1950);
         log('Saves3 set 13%');
@@ -433,7 +433,7 @@ function saves_but () {
         LENTA_B = saves3[14];
         setTimeout(() => {  send('lenb' + LENTA_B ); }, 2250);
         log('Saves3 set 15% !!!');
-        saves1_color5.style.background = 'rgb(' + saves3[12] + ", " + saves3[13] + ", " + saves3[14] + ")";
+        saves3_color5.style.background = 'rgb(' + saves3[12] + ", " + saves3[13] + ", " + saves3[14] + ")";
     });
 
     button_saves4.addEventListener('click', function() {
@@ -509,7 +509,7 @@ function saves_but () {
         FRT_LH_B = saves4[2];
         setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 450);
         log('Saves4 set 3%');
-        saves1_color1.style.background = 'rgb(' + saves4[0] + ", " + saves4[1] + ", " + saves4[2] + ")";
+        saves4_color1.style.background = 'rgb(' + saves4[0] + ", " + saves4[1] + ", " + saves4[2] + ")";
         FRT_RH_R = saves4[3];
         setTimeout(() => {  send('lfrr' + FRT_RH_R ); }, 600);
         log('Saves4 set 4%');
@@ -519,7 +519,7 @@ function saves_but () {
         FRT_RH_B = saves4[5];
         setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 900);
         log('Saves4 set 6%');
-        saves1_color2.style.background = 'rgb(' + saves4[3] + ", " + saves4[4] + ", " + saves4[5] + ")";
+        saves4_color2.style.background = 'rgb(' + saves4[3] + ", " + saves4[4] + ", " + saves4[5] + ")";
         RR_LH_R = saves4[6];
         setTimeout(() => {  send('lrlr' + RR_LH_R ); }, 1050);
         log('Saves4 set 7%');
@@ -529,7 +529,7 @@ function saves_but () {
         RR_LH_B = saves4[8];
         setTimeout(() => {  send('lrlb' + RR_LH_B ); }, 1350);
         log('Saves4 set 9%');
-        saves1_color3.style.background = 'rgb(' + saves4[6] + ", " + saves4[7] + ", " + saves4[8] + ")";
+        saves4_color3.style.background = 'rgb(' + saves4[6] + ", " + saves4[7] + ", " + saves4[8] + ")";
         RR_RH_R = saves4[9];
         setTimeout(() => {  send('lrrr' + RR_RH_R ); }, 1500);
         log('Saves4 set 10%');
@@ -539,7 +539,7 @@ function saves_but () {
         RR_RH_B = saves4[11];
         setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 1800);
         log('Saves4 set 12%');
-        saves1_color4.style.background = 'rgb(' + saves4[9] + ", " + saves4[10] + ", " + saves4[11] + ")";
+        saves4_color4.style.background = 'rgb(' + saves4[9] + ", " + saves4[10] + ", " + saves4[11] + ")";
         LENTA_R = saves4[12];
         setTimeout(() => {  send('lenr' + LENTA_R ); }, 1950);
         log('Saves4 set 13%');
@@ -549,7 +549,7 @@ function saves_but () {
         LENTA_B = saves4[14];
         setTimeout(() => {  send('lenb' + LENTA_B ); }, 2250);
         log('Saves4 set 15% !!!');
-        saves1_color5.style.background = 'rgb(' + saves4[12] + ", " + saves4[13] + ", " + saves4[14] + ")";
+        saves4_color5.style.background = 'rgb(' + saves4[12] + ", " + saves4[13] + ", " + saves4[14] + ")";
     });
 
     button_saves5.addEventListener('click', function() {
@@ -625,7 +625,7 @@ function saves_but () {
         FRT_LH_B = saves5[2];
         setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 450);
         log('Saves5 set 3%');
-        saves1_color1.style.background = 'rgb(' + saves5[0] + ", " + saves5[1] + ", " + saves5[2] + ")";
+        saves5_color1.style.background = 'rgb(' + saves5[0] + ", " + saves5[1] + ", " + saves5[2] + ")";
         FRT_RH_R = saves5[3];
         setTimeout(() => {  send('lfrr' + FRT_RH_R ); }, 600);
         log('Saves5 set 4%');
@@ -635,7 +635,7 @@ function saves_but () {
         FRT_RH_B = saves5[5];
         setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 900);
         log('Saves5 set 6%');
-        saves1_color2.style.background = 'rgb(' + saves5[3] + ", " + saves5[4] + ", " + saves5[5] + ")";
+        saves5_color2.style.background = 'rgb(' + saves5[3] + ", " + saves5[4] + ", " + saves5[5] + ")";
         RR_LH_R = saves5[6];
         setTimeout(() => {  send('lrlr' + RR_LH_R ); }, 1050);
         log('Saves5 set 7%');
@@ -645,7 +645,7 @@ function saves_but () {
         RR_LH_B = saves5[8];
         setTimeout(() => {  send('lrlb' + RR_LH_B ); }, 1350);
         log('Saves5 set 9%');
-        saves1_color3.style.background = 'rgb(' + saves5[6] + ", " + saves5[7] + ", " + saves5[8] + ")";
+        saves5_color3.style.background = 'rgb(' + saves5[6] + ", " + saves5[7] + ", " + saves5[8] + ")";
         RR_RH_R = saves5[9];
         setTimeout(() => {  send('lrrr' + RR_RH_R ); }, 1500);
         log('Saves5 set 10%');
@@ -655,7 +655,7 @@ function saves_but () {
         RR_RH_B = saves5[11];
         setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 1800);
         log('Saves5 set 12%');
-        saves1_color4.style.background = 'rgb(' + saves5[9] + ", " + saves5[10] + ", " + saves5[11] + ")";
+        saves5_color4.style.background = 'rgb(' + saves5[9] + ", " + saves5[10] + ", " + saves5[11] + ")";
         LENTA_R = saves5[12];
         setTimeout(() => {  send('lenr' + LENTA_R ); }, 1950);
         log('Saves5 set 13%');
@@ -665,6 +665,6 @@ function saves_but () {
         LENTA_B = saves5[14];
         setTimeout(() => {  send('lenb' + LENTA_B ); }, 2250);
         log('Saves5 set 15% !!!');
-        saves1_color5.style.background = 'rgb(' + saves5[12] + ", " + saves5[13] + ", " + saves5[14] + ")";
+        saves5_color5.style.background = 'rgb(' + saves5[12] + ", " + saves5[13] + ", " + saves5[14] + ")";
     });
 }
