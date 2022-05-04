@@ -119,6 +119,7 @@ function receive(data) {
 
 function arrData(data) {
   if (data[0] === 's') {
+    // Ячейка сохранения 1
     if (data[1] === '1') {
       /* Сектор 1 */
       if (data[2] === '1') {
@@ -238,6 +239,438 @@ function arrData(data) {
           saves1[14] += data[6];
           /*clearData(data);*/
           log('saves15 blue load 15% - ' + data);
+        }
+      }
+    }
+    // Ячейка сохранения 2
+    if (data[1] === '2') {
+      /* Сектор 1 */
+      if (data[2] === '1') {
+        if (data[3] === 'r') {
+          saves2[0] = data[4];
+          saves2[0] += data[5];
+          saves2[0] += data[6];
+          log('saves21 red load 16% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves2[1] = data[4];
+          saves2[1] += data[5];
+          saves2[1] += data[6];
+          log('saves21 green load 17% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves2[2] = data[4];
+          saves2[2] += data[5];
+          saves2[2] += data[6];
+          log('saves21 blue load 18% - ' + data);
+        }
+      }
+      /* Сектор 2 */
+      if (data[2] === '2') {
+        if (data[3] === 'r') {
+          saves2[3] = data[4];
+          saves2[3] += data[5];
+          saves2[3] += data[6];
+          log('saves22 red load 19% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves2[4] = data[4];
+          saves2[4] += data[5];
+          saves2[4] += data[6];
+          log('saves22 green load 20% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves2[5] = data[4];
+          saves2[5] += data[5];
+          saves2[5] += data[6];
+          log('saves22 blue load 21% - ' + data);
+        }
+      }
+      /* Сектор 3 */
+      if (data[2] === '3') {
+        if (data[3] === 'r') {
+          saves2[6] = data[4];
+          saves2[6] += data[5];
+          saves2[6] += data[6];
+          log('saves23 red load 22% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves2[7] = data[4];
+          saves2[7] += data[5];
+          saves2[7] += data[6];
+          log('saves23 green load 23% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves2[8] = data[4];
+          saves2[8] += data[5];
+          saves2[8] += data[6];
+          log('saves23 blue load 24% - ' + data);
+        }
+      }
+      /* Сектор 4 */
+      if (data[2] === '4') {
+        if (data[3] === 'r') {
+          saves2[9] = data[4];
+          saves2[9] += data[5];
+          saves2[9] += data[6];
+          log('saves24 red load 25% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves2[10] = data[4];
+          saves2[10] += data[5];
+          saves2[10] += data[6];
+          log('saves24 green load 26% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves2[11] = data[4];
+          saves2[11] += data[5];
+          saves2[11] += data[6];
+          log('saves24 blue load 27% - ' + data);
+        }
+      }
+      /* Сектор 5 */
+      if (data[2] === '5') {
+        if (data[3] === 'r') {
+          saves2[12] = data[4];
+          saves2[12] += data[5];
+          saves2[12] += data[6];
+          log('saves25 red load 28% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves2[13] = data[4];
+          saves2[13] += data[5];
+          saves2[13] += data[6];
+          log('saves25 green load 29% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves2[14] = data[4];
+          saves2[14] += data[5];
+          saves2[14] += data[6];
+          log('saves25 blue load 30% - ' + data);
+        }
+      }
+    }
+    // Ячейка сохранения 3
+    if (data[1] === '3') {
+      /* Сектор 1 */
+      if (data[2] === '1') {
+        if (data[3] === 'r') {
+          saves3[0] = data[4];
+          saves3[0] += data[5];
+          saves3[0] += data[6];
+          log('saves31 red load 31% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves3[1] = data[4];
+          saves3[1] += data[5];
+          saves3[1] += data[6];
+          log('saves31 green load 32% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves3[2] = data[4];
+          saves3[2] += data[5];
+          saves3[2] += data[6];
+          log('saves31 blue load 33% - ' + data);
+        }
+      }
+      /* Сектор 2 */
+      if (data[2] === '2') {
+        if (data[3] === 'r') {
+          saves3[3] = data[4];
+          saves3[3] += data[5];
+          saves3[3] += data[6];
+          log('saves32 red load 34% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves3[4] = data[4];
+          saves3[4] += data[5];
+          saves3[4] += data[6];
+          log('saves32 green load 35% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves3[5] = data[4];
+          saves3[5] += data[5];
+          saves3[5] += data[6];
+          log('saves32 blue load 36% - ' + data);
+        }
+      }
+      /* Сектор 3 */
+      if (data[2] === '3') {
+        if (data[3] === 'r') {
+          saves3[6] = data[4];
+          saves3[6] += data[5];
+          saves3[6] += data[6];
+          log('saves33 red load 37% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves3[7] = data[4];
+          saves3[7] += data[5];
+          saves3[7] += data[6];
+          log('saves33 green load 38% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves3[8] = data[4];
+          saves3[8] += data[5];
+          saves3[8] += data[6];
+          log('saves33 blue load 39% - ' + data);
+        }
+      }
+      /* Сектор 4 */
+      if (data[2] === '4') {
+        if (data[3] === 'r') {
+          saves3[9] = data[4];
+          saves3[9] += data[5];
+          saves3[9] += data[6];
+          log('saves34 red load 40% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves3[10] = data[4];
+          saves3[10] += data[5];
+          saves3[10] += data[6];
+          log('saves34 green load 41% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves3[11] = data[4];
+          saves3[11] += data[5];
+          saves3[11] += data[6];
+          log('saves34 blue load 42% - ' + data);
+        }
+      }
+      /* Сектор 5 */
+      if (data[2] === '5') {
+        if (data[3] === 'r') {
+          saves3[12] = data[4];
+          saves3[12] += data[5];
+          saves3[12] += data[6];
+          log('saves35 red load 43% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves3[13] = data[4];
+          saves3[13] += data[5];
+          saves3[13] += data[6];
+          log('saves35 green load 44% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves3[14] = data[4];
+          saves3[14] += data[5];
+          saves3[14] += data[6];
+          log('saves35 blue load 45% - ' + data);
+        }
+      }
+    }
+    // Ячейка сохранения 4
+    if (data[1] === '4') {
+      /* Сектор 1 */
+      if (data[2] === '1') {
+        if (data[3] === 'r') {
+          saves4[0] = data[4];
+          saves4[0] += data[5];
+          saves4[0] += data[6];
+          log('saves41 red load 46% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves4[1] = data[4];
+          saves4[1] += data[5];
+          saves4[1] += data[6];
+          log('saves41 green load 47% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves4[2] = data[4];
+          saves4[2] += data[5];
+          saves4[2] += data[6];
+          log('saves41 blue load 48% - ' + data);
+        }
+      }
+      /* Сектор 2 */
+      if (data[2] === '2') {
+        if (data[3] === 'r') {
+          saves4[3] = data[4];
+          saves4[3] += data[5];
+          saves4[3] += data[6];
+          log('saves42 red load 49% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves4[4] = data[4];
+          saves4[4] += data[5];
+          saves4[4] += data[6];
+          log('saves42 green load 50% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves4[5] = data[4];
+          saves4[5] += data[5];
+          saves4[5] += data[6];
+          log('saves42 blue load 51% - ' + data);
+        }
+      }
+      /* Сектор 3 */
+      if (data[2] === '3') {
+        if (data[3] === 'r') {
+          saves4[6] = data[4];
+          saves4[6] += data[5];
+          saves4[6] += data[6];
+          log('saves43 red load 52% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves4[7] = data[4];
+          saves4[7] += data[5];
+          saves4[7] += data[6];
+          log('saves43 green load 53% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves4[8] = data[4];
+          saves4[8] += data[5];
+          saves4[8] += data[6];
+          log('saves43 blue load 54% - ' + data);
+        }
+      }
+      /* Сектор 4 */
+      if (data[2] === '4') {
+        if (data[3] === 'r') {
+          saves4[9] = data[4];
+          saves4[9] += data[5];
+          saves4[9] += data[6];
+          log('saves44 red load 55% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves4[10] = data[4];
+          saves4[10] += data[5];
+          saves4[10] += data[6];
+          log('saves44 green load 56% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves4[11] = data[4];
+          saves4[11] += data[5];
+          saves4[11] += data[6];
+          log('saves44 blue load 57% - ' + data);
+        }
+      }
+      /* Сектор 5 */
+      if (data[2] === '5') {
+        if (data[3] === 'r') {
+          saves4[12] = data[4];
+          saves4[12] += data[5];
+          saves4[12] += data[6];
+          log('saves45 red load 58% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves4[13] = data[4];
+          saves4[13] += data[5];
+          saves4[13] += data[6];
+          log('saves45 green load 59% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves4[14] = data[4];
+          saves4[14] += data[5];
+          saves4[14] += data[6];
+          log('saves45 blue load 60% - ' + data);
+        }
+      }
+    }
+    // Ячейка сохранения 5
+    if (data[1] === '4') {
+      /* Сектор 1 */
+      if (data[2] === '1') {
+        if (data[3] === 'r') {
+          saves5[0] = data[4];
+          saves5[0] += data[5];
+          saves5[0] += data[6];
+          log('saves51 red load 61% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves5[1] = data[4];
+          saves5[1] += data[5];
+          saves5[1] += data[6];
+          log('saves51 green load 62% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves5[2] = data[4];
+          saves5[2] += data[5];
+          saves5[2] += data[6];
+          log('saves51 blue load 63% - ' + data);
+        }
+      }
+      /* Сектор 2 */
+      if (data[2] === '2') {
+        if (data[3] === 'r') {
+          saves5[3] = data[4];
+          saves5[3] += data[5];
+          saves5[3] += data[6];
+          log('saves52 red load 64% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves5[4] = data[4];
+          saves5[4] += data[5];
+          saves5[4] += data[6];
+          log('saves52 green load 65% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves5[5] = data[4];
+          saves5[5] += data[5];
+          saves5[5] += data[6];
+          log('saves52 blue load 66% - ' + data);
+        }
+      }
+      /* Сектор 3 */
+      if (data[2] === '3') {
+        if (data[3] === 'r') {
+          saves5[6] = data[4];
+          saves5[6] += data[5];
+          saves5[6] += data[6];
+          log('saves53 red load 67% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves5[7] = data[4];
+          saves5[7] += data[5];
+          saves5[7] += data[6];
+          log('saves53 green load 68% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves5[8] = data[4];
+          saves5[8] += data[5];
+          saves5[8] += data[6];
+          log('saves53 blue load 69% - ' + data);
+        }
+      }
+      /* Сектор 4 */
+      if (data[2] === '4') {
+        if (data[3] === 'r') {
+          saves5[9] = data[4];
+          saves5[9] += data[5];
+          saves5[9] += data[6];
+          log('saves54 red load 70% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves5[10] = data[4];
+          saves5[10] += data[5];
+          saves5[10] += data[6];
+          log('saves54 green load 71% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves5[11] = data[4];
+          saves5[11] += data[5];
+          saves5[11] += data[6];
+          log('saves54 blue load 72% - ' + data);
+        }
+      }
+      /* Сектор 5 */
+      if (data[2] === '5') {
+        if (data[3] === 'r') {
+          saves5[12] = data[4];
+          saves5[12] += data[5];
+          saves5[12] += data[6];
+          log('saves55 red load 73% - ' + data);
+        }
+        if (data[3] === 'g') {
+          saves5[13] = data[4];
+          saves5[13] += data[5];
+          saves5[13] += data[6];
+          log('saves55 green load 74% - ' + data);
+        }
+        if (data[3] === 'b') {
+          saves5[14] = data[4];
+          saves5[14] += data[5];
+          saves5[14] += data[6];
+          log('saves55 blue load 75% - ' + data);
         }
       }
     }
