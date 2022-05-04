@@ -139,13 +139,13 @@ function saves_but () {
         log('Saves1 load 16%');
         /* 5 сектор */
         saves1[12] = LENTA_R;
-        setTimeout(() => {  send('loa15r' + LENTA_R); }, 1650);
+        setTimeout(() => {  send('loa15r' + LENTA_R); }, 1800);
         log('Saves1 load 17%');
         saves1[13] = LENTA_G;
-        setTimeout(() => {  send('loa15g' + LENTA_G); }, 1800);
+        setTimeout(() => {  send('loa15g' + LENTA_G); }, 1950);
         log('Saves1 load 18%');
         saves1[14] = LENTA_B;
-        setTimeout(() => {  send('loa15b' + LENTA_B); }, 1950);
+        setTimeout(() => {  send('loa15b' + LENTA_B); }, 2100);
         log('Saves1 load 19%');
         saves1_color5.style.background = 'rgb(' + saves1[12] + ", " + saves1[13] + ", " + saves1[14] + ")";
         log('Saves1 load 20% !!!');
@@ -255,13 +255,13 @@ function saves_but () {
         log('Saves2 load 80%');
         /* 5 сектор */
         saves2[12] = LENTA_R;
-        setTimeout(() => {  send('loa25r' + LENTA_R); }, 1650);
+        setTimeout(() => {  send('loa25r' + LENTA_R); }, 1800);
         log('Saves2 load 85%');
         saves2[13] = LENTA_G;
-        setTimeout(() => {  send('loa25g' + LENTA_G); }, 1800);
+        setTimeout(() => {  send('loa25g' + LENTA_G); }, 1950);
         log('Saves2 load 90%');
         saves2[14] = LENTA_B;
-        setTimeout(() => {  send('loa25b' + LENTA_B); }, 1950);
+        setTimeout(() => {  send('loa25b' + LENTA_B); }, 2100);
         log('Saves2 load 95%');
         saves2_color5.style.background = 'rgb(' + saves2[12] + ", " + saves2[13] + ", " + saves2[14] + ")";
         log('Saves2 load 100% !!!');
@@ -371,13 +371,13 @@ function saves_but () {
         log('Saves3 load 80%');
         /* 5 сектор */
         saves3[12] = LENTA_R;
-        setTimeout(() => {  send('loa35r' + LENTA_R); }, 1650);
+        setTimeout(() => {  send('loa35r' + LENTA_R); }, 1800);
         log('Saves3 load 85%');
         saves3[13] = LENTA_G;
-        setTimeout(() => {  send('loa35g' + LENTA_G); }, 1800);
+        setTimeout(() => {  send('loa35g' + LENTA_G); }, 1950);
         log('Saves3 load 90%');
         saves3[14] = LENTA_B;
-        setTimeout(() => {  send('loa35b' + LENTA_B); }, 1950);
+        setTimeout(() => {  send('loa35b' + LENTA_B); }, 2100);
         log('Saves3 load 95%');
         saves3_color5.style.background = 'rgb(' + saves3[12] + ", " + saves3[13] + ", " + saves3[14] + ")";
         log('Saves3 load 100% !!!');
@@ -487,13 +487,13 @@ function saves_but () {
         log('Saves4 load 80%');
         /* 5 сектор */
         saves4[12] = LENTA_R;
-        setTimeout(() => {  send('loa45r' + LENTA_R); }, 1650);
+        setTimeout(() => {  send('loa45r' + LENTA_R); }, 1800);
         log('Saves4 load 85%');
         saves4[13] = LENTA_G;
-        setTimeout(() => {  send('loa45g' + LENTA_G); }, 1800);
+        setTimeout(() => {  send('loa45g' + LENTA_G); }, 1950);
         log('Saves4 load 90%');
         saves4[14] = LENTA_B;
-        setTimeout(() => {  send('loa45b' + LENTA_B); }, 1950);
+        setTimeout(() => {  send('loa45b' + LENTA_B); }, 2100);
         log('Saves4 load 95%');
         saves4_color5.style.background = 'rgb(' + saves4[12] + ", " + saves4[13] + ", " + saves4[14] + ")";
         log('Saves4 load 100% !!!');
@@ -603,13 +603,13 @@ function saves_but () {
         log('Saves5 load 80%');
         /* 5 сектор */
         saves5[12] = LENTA_R;
-        setTimeout(() => {  send('loa55r' + LENTA_R); }, 1650);
+        setTimeout(() => {  send('loa55r' + LENTA_R); }, 1800);
         log('Saves5 load 85%');
         saves5[13] = LENTA_G;
-        setTimeout(() => {  send('loa55g' + LENTA_G); }, 1800);
+        setTimeout(() => {  send('loa55g' + LENTA_G); }, 1950);
         log('Saves5 load 90%');
         saves5[14] = LENTA_B;
-        setTimeout(() => {  send('loa55b' + LENTA_B); }, 1950);
+        setTimeout(() => {  send('loa55b' + LENTA_B); }, 2100);
         log('Saves5 load 95%');
         saves5_color5.style.background = 'rgb(' + saves5[12] + ", " + saves5[13] + ", " + saves5[14] + ")";
         log('Saves5 load 100% !!!');
