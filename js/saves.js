@@ -70,7 +70,11 @@ function saves_but () {
         send('loa11r' + FRT_LH_R);
         log('Saves1 load 1%');
         saves1[1] = FRT_LH_G;
-        setTimeout(() => {  send('loa11g' + FRT_LH_G); }, 300);
+        saves1[2] = FRT_LH_B;
+        setTimeout(() => {  
+            send('loa11g' + FRT_LH_G); 
+            setTimeout(() => {  send('loa11b' + FRT_LH_B); }, 300);
+        }, 300);
         log('Saves1 load 2%');
         saves1[2] = FRT_LH_B;
         setTimeout(() => {  send('loa11b' + FRT_LH_B); }, 300);
