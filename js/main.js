@@ -670,7 +670,36 @@ function arrData(data) {
           saves5[14] = data[4];
           saves5[14] += data[5];
           saves5[14] += data[6];
-          log('saves55 blue load 75% - ' + data);
+          log('saves55 blue load 75% - ' + data + '!!!');
+          saves1_color1.style.background = 'rgb(' + saves1[0] + ", " + saves1[1] + ", " + saves1[2] + ")";
+          saves1_color2.style.background = 'rgb(' + saves1[3] + ", " + saves1[4] + ", " + saves1[5] + ")";
+          saves1_color3.style.background = 'rgb(' + saves1[6] + ", " + saves1[7] + ", " + saves1[8] + ")";
+          saves1_color4.style.background = 'rgb(' + saves1[9] + ", " + saves1[10] + ", " + saves1[11] + ")";
+          saves1_color5.style.background = 'rgb(' + saves1[12] + ", " + saves1[13] + ", " + saves1[14] + ")";
+          
+          saves2_color1.style.background = 'rgb(' + saves2[0] + ", " + saves2[1] + ", " + saves2[2] + ")";
+          saves2_color2.style.background = 'rgb(' + saves2[3] + ", " + saves2[4] + ", " + saves2[5] + ")";
+          saves2_color3.style.background = 'rgb(' + saves2[6] + ", " + saves2[7] + ", " + saves2[8] + ")";
+          saves2_color4.style.background = 'rgb(' + saves2[9] + ", " + saves2[10] + ", " + saves2[11] + ")";
+          saves2_color5.style.background = 'rgb(' + saves2[12] + ", " + saves2[13] + ", " + saves2[14] + ")";
+          
+          saves3_color1.style.background = 'rgb(' + saves3[0] + ", " + saves3[1] + ", " + saves3[2] + ")";
+          saves3_color2.style.background = 'rgb(' + saves3[3] + ", " + saves3[4] + ", " + saves3[5] + ")";
+          saves3_color3.style.background = 'rgb(' + saves3[6] + ", " + saves3[7] + ", " + saves3[8] + ")";
+          saves3_color4.style.background = 'rgb(' + saves3[9] + ", " + saves3[10] + ", " + saves3[11] + ")";
+          saves3_color5.style.background = 'rgb(' + saves3[12] + ", " + saves3[13] + ", " + saves3[14] + ")";
+
+          saves4_color1.style.background = 'rgb(' + saves4[0] + ", " + saves4[1] + ", " + saves4[2] + ")";
+          saves4_color2.style.background = 'rgb(' + saves4[3] + ", " + saves4[4] + ", " + saves4[5] + ")";
+          saves4_color3.style.background = 'rgb(' + saves4[6] + ", " + saves4[7] + ", " + saves4[8] + ")";
+          saves4_color4.style.background = 'rgb(' + saves4[9] + ", " + saves4[10] + ", " + saves4[11] + ")";
+          saves4_color5.style.background = 'rgb(' + saves4[12] + ", " + saves4[13] + ", " + saves4[14] + ")";
+
+          saves5_color1.style.background = 'rgb(' + saves5[0] + ", " + saves5[1] + ", " + saves5[2] + ")";
+          saves5_color2.style.background = 'rgb(' + saves5[3] + ", " + saves5[4] + ", " + saves5[5] + ")";
+          saves5_color3.style.background = 'rgb(' + saves5[6] + ", " + saves5[7] + ", " + saves5[8] + ")";
+          saves5_color4.style.background = 'rgb(' + saves5[9] + ", " + saves5[10] + ", " + saves5[11] + ")";
+          saves5_color5.style.background = 'rgb(' + saves5[12] + ", " + saves5[13] + ", " + saves5[14] + ")";
         }
       }
     }
