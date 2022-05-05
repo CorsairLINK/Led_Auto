@@ -555,61 +555,61 @@ function saves_but () {
     button_saves5.addEventListener('click', function() {
         /* 1 сектор */
         saves5[0] = FRT_LH_R;
-        setTimeout(() => {  send('loa51r' + FRT_LH_R); }, 75);
+        setTimeout(() => {  send('loa51r' + FRT_LH_R); }, 100);
         log('Saves5 load 5%');
         saves5[1] = FRT_LH_G;
-        setTimeout(() => {  send('loa51g' + FRT_LH_G); }, 150);
+        setTimeout(() => {  send('loa51g' + FRT_LH_G); }, 200);
         log('Saves5 load 10%');
         saves5[2] = FRT_LH_B;
-        setTimeout(() => {  send('loa51b' + FRT_LH_B); }, 225);
+        setTimeout(() => {  send('loa51b' + FRT_LH_B); }, 300);
         log('Saves5 load 15%');
         saves5_color1.style.background = 'rgb(' + saves5[0] + ", " + saves5[1] + ", " + saves5[2] + ")";
         log('Saves5 load 20%');
         /* 2 сектор */
         saves5[3] = FRT_RH_R;
-        setTimeout(() => {  send('loa52r' + FRT_RH_R); }, 300);
+        setTimeout(() => {  send('loa52r' + FRT_RH_R); }, 400);
         log('Saves5 load 25%');
         saves5[4] = FRT_RH_G;
-        setTimeout(() => {  send('loa52g' + FRT_RH_G); }, 375);
+        setTimeout(() => {  send('loa52g' + FRT_RH_G); }, 500);
         log('Saves5 load 30%');
         saves5[5] = FRT_RH_B;
-        setTimeout(() => {  send('loa52b' + FRT_RH_B); }, 450);
+        setTimeout(() => {  send('loa52b' + FRT_RH_B); }, 600);
         log('Saves5 load 35%');
         saves5_color2.style.background = 'rgb(' + saves5[3] + ", " + saves5[4] + ", " + saves5[5] + ")";
         log('Saves5 load 40%');
         /* 3 сектор */
         saves5[6] = RR_LH_R;
-        setTimeout(() => {  send('loa53r' + RR_LH_R); }, 525);
+        setTimeout(() => {  send('loa53r' + RR_LH_R); }, 700);
         log('Saves5 load 45%');
         saves5[7] = RR_LH_G;
-        setTimeout(() => {  send('loa53g' + RR_LH_G); }, 600);
+        setTimeout(() => {  send('loa53g' + RR_LH_G); }, 800);
         log('Saves5 load 50%');
         saves5[8] = RR_LH_B;
-        setTimeout(() => {  send('loa53b' + RR_LH_B); }, 675);
+        setTimeout(() => {  send('loa53b' + RR_LH_B); }, 900);
         log('Saves5 load 55%');
         saves5_color3.style.background = 'rgb(' + saves5[6] + ", " + saves5[7] + ", " + saves5[8] + ")";
         log('Saves5 load 60%');
         /* 4 сектор */
         saves5[9] = RR_RH_R;
-        setTimeout(() => {  send('loa54r' + RR_RH_R); }, 750);
+        setTimeout(() => {  send('loa54r' + RR_RH_R); }, 1000);
         log('Saves5 load 65%');
         saves5[10] = RR_RH_G;
-        setTimeout(() => {  send('loa54g' + RR_RH_G); }, 825)
+        setTimeout(() => {  send('loa54g' + RR_RH_G); }, 1100)
         log('Saves5 load 70%');
         saves5[11] = RR_RH_B;
-        setTimeout(() => {  send('loa54b' + RR_RH_B); }, 900);
+        setTimeout(() => {  send('loa54b' + RR_RH_B); }, 1200);
         log('Saves5 load 75%');
         saves5_color4.style.background = 'rgb(' + saves5[9] + ", " + saves5[10] + ", " + saves5[11] + ")";
         log('Saves5 load 80%');
         /* 5 сектор */
         saves5[12] = LENTA_R;
-        setTimeout(() => {  send('loa55r' + LENTA_R); }, 975);
+        setTimeout(() => {  send('loa55r' + LENTA_R); }, 1300);
         log('Saves5 load 85%');
         saves5[13] = LENTA_G;
-        setTimeout(() => {  send('loa55g' + LENTA_G); }, 1050);
+        setTimeout(() => {  send('loa55g' + LENTA_G); }, 1400);
         log('Saves5 load 90%');
         saves5[14] = LENTA_B;
-        setTimeout(() => {  send('loa55b' + LENTA_B); }, 1125);
+        setTimeout(() => {  send('loa55b' + LENTA_B); }, 1500);
         log('Saves5 load 95%');
         saves5_color5.style.background = 'rgb(' + saves5[12] + ", " + saves5[13] + ", " + saves5[14] + ")";
         log('Saves5 load 100% !!!');
