@@ -52,7 +52,7 @@ function listner_main () {
 			output_blue.innerHTML = FRT_LH_B;
 			slider_blue.value = FRT_LH_B;
 			color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-			send('lflc');
+			send('lrrc');
 			/*setTimeout(() => {  send('lflg' + FRT_LH_G ); }, 75);
 			setTimeout(() => {  send('lflb' + FRT_LH_B ); }, 75);*/
 			log('reset color');
@@ -71,22 +71,22 @@ function listner_main () {
 			output_red.innerHTML = this.value;
 			FRT_LH_R = this.value;
 			color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-			log('out: lflr' + FRT_LH_R );
-			send('lflr' + FRT_LH_R );
+			log('out: lrrr' + FRT_LH_R );
+			send('lrrr' + FRT_LH_R );
 		}
 		slider_green.oninput = function() {
 			output_green.innerHTML = this.value;
 			FRT_LH_G = this.value;
 			color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-			log('out: lflg' + FRT_LH_G );
-			send('lflg' + FRT_LH_G );
+			log('out: lrrg' + FRT_LH_G );
+			send('lrrg' + FRT_LH_G );
 		}
 		slider_blue.oninput = function() {
 			output_blue.innerHTML = this.value;
 			FRT_LH_B = this.value;
 			color.style.background = 'rgb(' + FRT_LH_R + ", " + FRT_LH_G + ", " + FRT_LH_B + ")";
-			log('out: lflb' + FRT_LH_B );
-			send('lflb' + FRT_LH_B );
+			log('out: lrrb' + FRT_LH_B );
+			send('lrrb' + FRT_LH_B );
 		}
 	});
 	button_FRT_RH.addEventListener('click', function(){
@@ -116,7 +116,7 @@ function listner_main () {
 			output_blue.innerHTML = FRT_RH_B;
 			slider_blue.value = FRT_RH_B;
 			color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
-			send('lfrc');
+			send('lrlc');
 			/*setTimeout(() => {  send('lfrg' + FRT_RH_G ); }, 75);
 			setTimeout(() => {  send('lfrb' + FRT_RH_B ); }, 75);*/
 			log('reset color');
@@ -135,22 +135,22 @@ function listner_main () {
 			output_red.innerHTML = this.value;
 			FRT_RH_R = this.value;
 			color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
-			log('out: lfrr' + FRT_RH_R );
-			send('lfrr' + FRT_RH_R );
+			log('out: lrlr' + FRT_RH_R );
+			send('lrlr' + FRT_RH_R );
 		}
 		slider_green.oninput = function() {
 			output_green.innerHTML = this.value;
 			FRT_RH_G = this.value;
 			color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
-			log('out: lfrg' + FRT_RH_G );
-			send('lfrg' + FRT_RH_G );
+			log('out: lrlg' + FRT_RH_G );
+			send('lrlg' + FRT_RH_G );
 		}
 		slider_blue.oninput = function() {
 			output_blue.innerHTML = this.value;
 			FRT_RH_B = this.value;
 			color.style.background = 'rgb(' + FRT_RH_R + ", " + FRT_RH_G + ", " + FRT_RH_B + ")";
-			log('out: lfrb' + FRT_RH_B );
-			send('lfrb' + FRT_RH_B );
+			log('out: lrlb' + FRT_RH_B );
+			send('lrlb' + FRT_RH_B );
 		}
 	});	
 	button_RR_LH.addEventListener('click', function(){
@@ -180,7 +180,7 @@ function listner_main () {
 			output_blue.innerHTML = RR_LH_B;
 			slider_blue.value = RR_LH_B;
 			color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-			send('lrlc');
+			send('lfrc');
 			/*setTimeout(() => {  send('lrlg' + RR_LH_G ); }, 75);
 			setTimeout(() => {  send('lrlb' + RR_LH_B ); }, 75);*/
 			log('reset color');
@@ -198,22 +198,22 @@ function listner_main () {
 			output_red.innerHTML = this.value;
 			RR_LH_R = this.value;
 			color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-			log('out: lrlr' + RR_LH_R);
-			send('lrlr' + RR_LH_R );
+			log('out: lfrr' + RR_LH_R);
+			send('lfrr' + RR_LH_R );
 		}
 		slider_green.oninput = function() {
 			output_green.innerHTML = this.value;
 			RR_LH_G = this.value;
 			color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-			log('out: lrlg' + RR_LH_G);
-			send('lrlg' + RR_LH_G );
+			log('out: lfrg' + RR_LH_G);
+			send('lfrg' + RR_LH_G );
 		}
 		slider_blue.oninput = function() {
 			output_blue.innerHTML = this.value;
 			RR_LH_B = this.value;
 			color.style.background = 'rgb(' + RR_LH_R + ", " + RR_LH_G + ", " + RR_LH_B + ")";
-			log('out: lrlb' + RR_LH_B);
-			send('lrlb' + RR_LH_B );
+			log('out: lfrb' + RR_LH_B);
+			send('lfrb' + RR_LH_B );
 		}
 	});
 	button_RR_RH.addEventListener('click', function(){
@@ -244,7 +244,7 @@ function listner_main () {
 			output_blue.innerHTML = RR_RH_B;
 			slider_blue.value = RR_RH_B;
 			color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
-			send('lrrc');
+			send('lflc');
 			/*setTimeout(() => {  send('lrrg' + RR_RH_G ); }, 60);
 			setTimeout(() => {  send('lrrb' + RR_RH_B ); }, 60);*/
 			log('reset color');
@@ -262,22 +262,22 @@ function listner_main () {
 			output_red.innerHTML = this.value;
 			RR_RH_R = this.value;
 			color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
-			log('out: lrrr' + RR_RH_R);
-			send('lrrr' + RR_RH_R );
+			log('out: lflr' + RR_RH_R);
+			send('lflr' + RR_RH_R );
 		}
 		slider_green.oninput = function() {
 			output_green.innerHTML = this.value;
 			RR_RH_G = this.value;
 			color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
-			log('out: lrrg' + RR_RH_G);
-			send('lrrg' + RR_RH_G );
+			log('out: lflg' + RR_RH_G);
+			send('lflg' + RR_RH_G );
 		}
 		slider_blue.oninput = function() {
 			output_blue.innerHTML = this.value;
 			RR_RH_B = this.value;
 			color.style.background = 'rgb(' + RR_RH_R + ", " + RR_RH_G + ", " + RR_RH_B + ")";
-			log('out: lrrb' + RR_RH_B);
-			send('lrrb' + RR_RH_B );
+			log('out: lflb' + RR_RH_B);
+			send('lflb' + RR_RH_B );
 		}
 	});
 	button_ALL.addEventListener('click', function(){
